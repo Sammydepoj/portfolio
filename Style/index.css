@@ -479,6 +479,7 @@ footer img{
     }
     .description{
         margin-top: 1rem;
+        font-size: 18px;
     }
     .hero-image{
         display: none;
