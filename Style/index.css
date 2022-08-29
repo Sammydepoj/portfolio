@@ -174,9 +174,10 @@ justify-content: space-between;
     background-color: #FDC435;
     border-radius: 50%;
     width: 35%;
+    padding: 2.5rem;
 }
 .about-image img{
-    width: 85%;
+    width: 90%;
     height: 200px;
 }
 .projects{
@@ -342,6 +343,17 @@ footer img{
     .links{
         margin: 1rem auto;
     }
+    .about-txt h2{
+        font-size: 36px;
+        width: 85%;
+    }
+    .about-txt p{
+        font-size: 16px;
+    }
+    .about-image{
+        width: 40%;
+        padding: 2rem;
+    }
     .projects h2{
         font-size: 40px;
         padding-bottom: 0rem;
@@ -425,6 +437,26 @@ footer img{
     .message h2{
         font-size: 28px;
         padding: 0rem;
+    }
+    .about-section{
+        padding: 1rem 1rem;
+    }
+    .aboutHeroPic{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .about-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .about-txt h2{
+        margin-top: 2rem;
+    }
+    .about-txt p{
+        width: 100%;
+    }
+    .about-image{
+        display: none;
     }
 }
 @media (max-width:420px){
