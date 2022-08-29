@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Begins -->
+    <header>
+        <div class="brand-nav">
+            <div class="brand">
+                <h2>Sammydepoj</h2>
+            </div>
+            <span class="menu-icon" id="menu" >
+                <i class="material-icons">dehaze</i>
+            </span>
+            <nav>
+                <ul id="ul">
+                    <li><a href="#" id="about" onclick="aboutshow()">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <span class="close-nav" onclick="return closeModal()"> &times;</span> 
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="hero-text">
+                <p class="title">WEB DEVELOPER</p>
+                <h1>Hello, my name is  Adepoju Adeyemi Samuel</h1>
+                <p class="description">Short text with details about you, what you do or your professional career. You
+                    can add more information on the about page.</p>
+
+                <div class="links">
+                    <a href="#projects" class="btn btn1">Projects</a>
+                    <a href="#" class="btn">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="Assets/sammydepoj.png" alt='my-picture' />
+            </div>
+        </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Projects Section Begins-->
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about-section">
+        <div class="brand-nav">
+            <div class="brand">
+                <h2>Sammydepoj</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="about" onclick="aboutshow()">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="aboutHeroPic">
+            <div class="about-txt">
+                <h2>About me</h2>
+                <p>Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque auctor dis ipsum. Pretium cras amet odio amet eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet sit.</p>
+                <a href="#" class="btn btn1">Resume</a>
+            </div>
+            <div class="about-image">
+                <img src="Assets/sammydepoj.png" alt='my-picture' />
+            </div>
+        </div>
+    </section>
+    <div class="projects" id="projects">
+        <h2>Projects</h2>
+    </div>
+
+    <section class="proj-section">
+        <div class="project-card">
+            <div class="proj-details">
+                <h3>Weather Forecast</h3>
+                <p>I created this personal project in order to show my knowledge in API consumption Using Javascript .
+                </p>
+                <a target="_blank" href="https://sammydepoj.github.io/weather-app/">View Project</a>
+            </div>
+            <div class="proj-image">
+                <img src="Assets/weather-app.jpeg" alt="project image" />
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="proj-details">
+                <h3>Getfunds.Ng</h3>
+                <p>I created this personal project in order to show how to implement a website interface from a Figma
+                    design and also to gain experience in working in a team that consist of product designers,digital
+                    marketers,customer relation managers,product managers and many more.</p>
+                <a target="_blank" href="https://getfundsng.github.io/Our-Website/">View Project</a>
+            </div>
+            <div class="proj-image">
+                <img src="Assets/getfunds.jpeg" alt="project image" />
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="proj-details">
+                <h3>My Dico</h3>
+                <p>I created this personal project in order to show my knowledge in API consumption Using Javascript .
+                </p>
+                <a target="_blank" href="https://sammydepoj.github.io/api-dictionary/">View Project</a>
+            </div>
+            <div class="proj-image">
+                <img src="Assets/Mydico.jpeg" alt="project image" />
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="proj-details">
+                <h3>PricingHub</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem dolor eum fuga alias soluta
+                    repellendus, dolore vel quam laborum neque optio ipsa vero doloribus aut ex distinctio ullam.?</p>
+                <a target="_blank" href="https://team25ph.herokuapp.com/">View Project</a>
+            </div>
+            <div class="proj-image">
+                <img src="Assets/pricinghub.jpeg" alt="project image" />
+            </div>
+        </div>
+    </section>
+
+    <div class="message" id="contacts">
+        <h2>Get in touch with me</h2>
+    </div>
+
+    <section class="getInTouch">
+        <div class="message-form">
+            <form action="">
+                <div>
+                    <label>Name</label>
+                    <br>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <br>
+                    <input type="email" name="" id="">
+                </div>
+                <div>
+                    <label>Message</label>
+                    <br>
+                    <textarea cols="20" rows="10"></textarea>
+                </div>
+               
+                <button class="message-send">Send</button>
+           
+            </form>
+        </div>
+
+        <div class="social-brand">
+            <div class="socials">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="Assets/insta.png" alt="instagram"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="Assets/linkedin.png" alt="linkedin"></a>
+                <a href="mailto:samueladepoju86@yahoo.com"><img src="Assets/email.png" alt="email"  />
+                </a>
+            </div>
+            <div class="brand">
+                <h2>Sammydepoj 2022</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="Assets/footerimg.png" alt="">
+    </footer>
+
+    <script src="./Scripts/index.js"></script>
+</body>
+
+</html>
