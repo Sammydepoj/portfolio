@@ -101,7 +101,7 @@ justify-content: space-between;
     top: 0rem;
     z-index: -2;
     text-align: center;
-    background-image: url('/Assets/yellow-bg.png');
+    background-image: url('Assets/yellow-bg.png');
     /* background-repeat: no-repeat no-repeat;
     background-position: right;
     background-size: cover; */
