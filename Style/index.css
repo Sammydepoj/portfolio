@@ -36,7 +36,7 @@ ul{
     display: none;
     width: 07%;
     position: absolute;
-    right: 30px;
+    right: 05px;
     top: 15px;
 }
 .close-nav{
@@ -330,6 +330,18 @@ footer img{
     margin: -4rem 0rem;
 }
 
+
+
+@media(max-width:1024px){
+    .hero-text{
+        width: 65%;
+    }
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+}
+
 @media(max-width:900px){
     header{
         padding: 1rem;
@@ -388,11 +400,18 @@ footer img{
         margin: 0rem;
 
     }
+    ul li a{
+        font-size: 1rem;
+        margin: 2rem;
+    }
     #menu{
         display: block;
     }
     .close-nav{
         display: block;
+        text-align: center;
+        font-size: 1rem;
+        border: 1px solid red;
     }
     li a{
         font-size: 14px;
@@ -411,6 +430,7 @@ footer img{
     .description{
         line-height: 25px;
         font-size: 14px;
+        width: 100%;
     }
     .btn{
         font-size: 14px;
@@ -459,7 +479,7 @@ footer img{
         display: none;
     }
 }
-@media (max-width:420px){
+@media (max-width:425px){
     header{
         padding: 0.5rem auto;
     }

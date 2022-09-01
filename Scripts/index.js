@@ -7,23 +7,21 @@ function aboutshow() {
     else{
         show.style.display="none";
     }
-
 }
 
-// window.onclick=function(event){
-//     if (event.target == document.getElementById('about-section')){
-//         document.getElementById('about-section').style.display="none";
-//     }
-//     }
+function aboutClose(){
+    show.style.display="none"
+}
 
 
 // harmbuger
 let menu = document.getElementsByClassName('menu-icon')[0];
 menu.onclick=function(){
             document.getElementById('ul').style.display="block";
-            menu.style.display="none"
 }
+
 let showMenu =document.getElementById('ul');
+
 
 function closeModal(){
     if (showMenu.style.display="block") {
@@ -32,4 +30,5 @@ function closeModal(){
     else{
         showMenu.style.display="block";
     }
+
 }
