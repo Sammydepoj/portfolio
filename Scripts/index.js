@@ -13,15 +13,16 @@ function aboutClose(){
     show.style.display="none"
 }
 
-
 // harmbuger
 let menu = document.getElementsByClassName('menu-icon')[0];
-menu.onclick=function(){
-            document.getElementById('ul').style.display="block";
+
+    menu.onclick=function(){
+    document.getElementById('ul').style.display="block";
 }
 
-let showMenu =document.getElementById('ul');
 
+
+let showMenu =document.getElementById('ul');
 
 function closeModal(){
     if (showMenu.style.display="block") {
