@@ -425,6 +425,11 @@ footer img{
         font-size: 30px;
         padding: 1rem;
     }
+    .proj-details a{
+        font-size: 14px;
+        padding: 0.3rem ;
+        margin: auto 0.3rem auto 0rem ;
+    }
     .proj-details p{
         width: 100%;
     }
@@ -499,8 +504,14 @@ footer img{
     .proj-details h3{
         font-size: 24px;
     }
+   
     .proj-details p{
         padding: 0rem auto 1rem;
+    }
+    .proj-details a{
+        font-size: 12px;
+        padding: 0.3rem ;
+        margin: auto 0.3rem auto 0rem ;
     }
     .message h2{
         font-size: 28px;
@@ -573,6 +584,13 @@ footer img{
     .proj-details p{
         margin: 0rem;
         padding: 0.1rem auto;
+    }
+    .proj-details a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        margin: 0rem 1rem 0rem 0rem;
     }
     .message-form form {
         padding: 1rem;
