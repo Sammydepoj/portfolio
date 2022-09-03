@@ -31,6 +31,7 @@ header{
 ul{
     display: flex;
     justify-content: space-evenly;
+    z-index: 5;
 }
 #menu{
     display: none;
@@ -130,10 +131,11 @@ justify-content: space-between;
     top: 0rem;
     z-index: -2;
     text-align: center;
+    background-size: cover;
     background-image: url('/Assets/yellow-bg.png');
     /* background-repeat: no-repeat no-repeat;
     background-position: right;
-    background-size: cover; */
+    */
 }
 .hero-image img{
     width: 50%;
@@ -173,6 +175,7 @@ justify-content: space-between;
     position: absolute;
     top: 0;
     background-color: #FFFFFF;
+    z-index: 9;
 }
 .aboutHeroPic{
     display: flex;

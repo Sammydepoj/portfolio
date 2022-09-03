@@ -1,8 +1,12 @@
 let show =document.getElementById('about-section')
+let showMenu =document.getElementById('ul');
+let menu = document.getElementsByClassName('menu-icon')[0];
+
 
 function aboutshow() {
     if (show.style.display="none") {
         show.style.display="block"
+        document.getElementById('ul').style.display="none";
     }
     else{
         show.style.display="none";
@@ -14,15 +18,12 @@ function aboutClose(){
 }
 
 // harmbuger
-let menu = document.getElementsByClassName('menu-icon')[0];
-
     menu.onclick=function(){
     document.getElementById('ul').style.display="block";
 }
 
 
 
-let showMenu =document.getElementById('ul');
 
 function closeModal(){
     if (showMenu.style.display="block") {
