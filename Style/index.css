@@ -57,12 +57,26 @@ li a{
     line-height: 28px;
     color: #25282B;
 }
+/* Animation for hero section */
+@keyframes example {
+  0%   {left:-100px; top:-100px;}
+  /* 25%  {background-color:yellow; left:200px; top:0px;} */
+  /* 50%  {left:0px; top:0px;} */
+  /* 75%  {background-color:green; left:0px; top:200px;} */
+  100% { left:0px; top:0px;}
+}
+
 .hero{
 display: flex;
 justify-content: space-between;
 }
 .hero-text{
     width: 50%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 0.7s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in;
 }
 .title{
     font-family: 'Nunito';
