@@ -6,7 +6,6 @@ let menu = document.getElementsByClassName('menu-icon')[0];
 function aboutshow() {
     if (show.style.display="none") {
         show.style.display="block"
-        document.getElementById('ul').style.display="none";
     }
     else{
         show.style.display="none";
