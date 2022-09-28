@@ -8,6 +8,7 @@
     <title>SAMMYDEPOJ</title>
     <link rel="stylesheet" href="Style/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"/> -->
 </head>
 
 <body>
@@ -15,25 +16,39 @@
     <header>
         <div class="brand-nav">
             <div class="brand">
-                <h2>Sammydepoj</h2>
+                <h2 id="brandName" class="h2-brandname">Sammydepoj</h2>
             </div>
-            <span class="menu-icon" id="menu" >
+
+            <div class="modeToggle">
+                <!-- <label for="" class="switch">
+                    <i class="fas fa-adjust"></i>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        <span class="slider round"></span>
+                    </div>
+                </label> -->
+                <button onclick="modeToggle()">Dark/Light Mode</button>
+            </div>
+
+            <span class="menu-icon" id="menu">
                 <i class="material-icons">dehaze</i>
             </span>
+
             <nav>
                 <ul id="ul">
-                    <li><a href="#" id="about" onclick="aboutshow()">About</a></li>
+                    <li><a href="#" id="about" onclick="aboutshow()">About Me</a></li>
                     <li><a href="#projects">Project</a></li>
                     <li><a href="#contacts">Contacts</a></li>
-                    <span class="close-nav" onclick="return closeModal()"> &times;</span> 
+                    <span class="close-nav" onclick="return closeModal()"> &times;</span>
                 </ul>
             </nav>
         </div>
         <div class="hero">
             <div class="hero-text">
                 <p class="title">WEB DEVELOPER</p>
-                <h1>Hello, my name is  Adepoju Adeyemi Samuel</h1>
-                <p class="description">I create experiences that are aesthetically pleasing for people, while prioritizing the accessibility and performance of such software interfaces on, and for the web.</p>
+                <h1>Hello, my name is Adepoju Adeyemi Samuel</h1>
+                <p class="description">I create experiences that are aesthetically pleasing for people, while
+                    prioritizing the accessibility and performance of such software interfaces on, and for the web.</p>
 
                 <div class="links">
                     <a href="#projects" class="btn btn1">Projects</a>
@@ -47,7 +62,7 @@
     </header>
     <!-- Header ends -->
 
-    <!-- Projects Section Begins-->
+    
 
     <!-- About Me Section -->
     <section class="about-section" id="about-section">
@@ -55,24 +70,28 @@
             <div class="brand">
                 <h2>Sammydepoj</h2>
             </div>
-            <span class="menu-icon" id="menu" >
+            <span class="menu-icon" id="menu">
                 <i class="material-icons">dehaze</i>
             </span>
             <nav>
                 <ul id="ul">
-                    <li><a href="#" id="about" onclick="aboutshow()">About</a></li>
+                    <li><a href="#" id="about" onclick="aboutshow()">About Me</a></li>
                     <li><a href="#projects">Project</a></li>
                     <li><a href="#contacts">Contacts</a></li>
-                    <span class="close-nav" onclick="return closeModal()" title="Close-modal"> &times;</span> 
+                    <span class="close-nav" onclick="return closeModal()" title="Close-modal"> &times;</span>
                 </ul>
             </nav>
         </div>
         <div class="aboutHeroPic" id="about-modal">
             <div class="about-txt">
                 <h2>About me</h2>
-                <p>I'm a professional web developer with years of experience. I'm focused and passionate about building user interface with the aim of giving users the best experience they can have while surfing the internet. 
-                I focusedon using html,css and javascript to build interactive and responsive user interfaces across all platforms.
-                I also have experience in PHP for server-side scripting while i am currently learning React.js and Bootstrap Css. 
+                <p>I'm a professional web developer with years of experience. I'm focused and passionate about building
+                    user interface with the aim of giving users the best experience they can have while surfing the
+                    internet.
+                    I focusedon using html,css and javascript to build interactive and responsive user interfaces across
+                    all platforms.
+                    I also have experience in PHP for server-side scripting while i am currently learning React.js and
+                    Bootstrap Css.
                 </p>
                 <a href="#" class="btn btn1">Resume</a>
                 <a href="#" id="close" onclick="aboutClose()" class="btn btn1">&times</a>
@@ -82,30 +101,33 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Projects Section Begins-->
     <div class="projects" id="projects">
         <h2>Projects</h2>
     </div>
 
     <section class="proj-section">
+
         <div class="project-card">
             <div class="proj-details">
-                <h3>Weather Forecast</h3>
-                <p>I created this personal project in order to show my knowledge in API consumption Using Javascript .
-                </p>
-                <div class="proj-link">
-                    <a target="_blank" href="https://sammydepoj.github.io/weather-app/">View Project</a>
-                    <a target="_blank" href="https://github.com/Sammydepoj/weather-app">View Code</a>
-                </div>
+                <h3>WeTeach</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem dolor eum fuga alias soluta
+                    repellendus, dolore vel quam laborum neque optio ipsa vero doloribus aut ex distinctio ullam.?</p>
+                <a target="_blank" href="https://weteachpage.netlify.app/">View Project</a>
+                <a target="_blank" href="https://github.com/Sammydepoj/weteach">View Code</a>
             </div>
             <div class="proj-image">
-                <img src="Assets/weather-app.jpeg" alt="project image" />
+                <img src="Assets/weteach.jpeg" alt="project image" />
             </div>
         </div>
 
         <div class="project-card">
             <div class="proj-details">
                 <h3>Getfunds.Ng</h3>
-                <p>I created collaborated on this project in order to show how to implement a website interface from a Figma
+                <p>I created collaborated on this project in order to show how to implement a website interface from a
+                    Figma
                     design and also to gain experience in working in a team that consist of product designers,digital
                     marketers,customer relation managers,product managers and many more.</p>
                 <a target="_blank" href="https://getfundsng.github.io/Our-Website/">View Project</a>
@@ -113,6 +135,19 @@
             </div>
             <div class="proj-image">
                 <img src="Assets/getfunds.jpeg" alt="project image" />
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="proj-details">
+                <h3>Weather Forecast</h3>
+                <p>I created this personal project in order to show my knowledge in API consumption Using Javascript .
+                </p>
+                <a target="_blank" href="https://sammydepoj.github.io/weather-app/">View Project</a>
+                <a target="_blank" href="https://github.com/Sammydepoj/weather-app">View Code</a>
+            </div>
+            <div class="proj-image">
+                <img src="Assets/weather-app.jpeg" alt="project image" />
             </div>
         </div>
 
@@ -142,18 +177,6 @@
             </div>
         </div>
 
-        <div class="project-card">
-            <div class="proj-details">
-                <h3>WeTeach</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem dolor eum fuga alias soluta
-                    repellendus, dolore vel quam laborum neque optio ipsa vero doloribus aut ex distinctio ullam.?</p>
-                <a target="_blank" href="https://weteachpage.netlify.app/">View Project</a>
-                <a target="_blank" href="https://github.com/Sammydepoj/weteach">View Code</a>
-            </div>
-            <div class="proj-image">
-                <img src="Assets/weteach.jpeg" alt="project image" />
-            </div>
-        </div>
     </section>
 
     <div class="message" id="contacts">
@@ -178,9 +201,9 @@
                     <br>
                     <textarea cols="20" rows="10"></textarea>
                 </div>
-               
+
                 <button class="message-send">Send</button>
-           
+
             </form>
         </div>
 
@@ -188,7 +211,7 @@
             <div class="socials">
                 <a href="#" target="_blank" rel="noopener noreferrer"><img src="Assets/insta.png" alt="instagram"></a>
                 <a href="#" target="_blank" rel="noopener noreferrer"><img src="Assets/linkedin.png" alt="linkedin"></a>
-                <a href="mailto:samueladepoju86@yahoo.com"><img src="Assets/email.png" alt="email"  />
+                <a href="mailto:samueladepoju86@yahoo.com"><img src="Assets/email.png" alt="email" />
                 </a>
             </div>
             <div class="brand">
