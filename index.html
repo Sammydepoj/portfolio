@@ -8,7 +8,7 @@
     <title>SAMMYDEPOJ</title>
     <link rel="stylesheet" href="Style/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,16 +19,11 @@
                 <h2 id="brandName" class="h2-brandname">Sammydepoj</h2>
             </div>
 
-            <div class="modeToggle">
-                <!-- <label for="" class="switch">
-                    <i class="fas fa-adjust"></i>
-                    <div>
-                        <input type="checkbox" name="" id="">
-                        <span class="slider round"></span>
-                    </div>
-                </label> -->
-                <button onclick="modeToggle()">Dark/Light Mode</button>
-            </div>
+            <button class="modeToggle" onclick="modeToggle()">
+                <i class="fa-regular fa-sun fa-2x" id="sun-icon"></i>
+
+                <i class="fa-solid fa-moon fa-2x" id="moon-icon"></i>
+            </button>
 
             <span class="menu-icon" id="menu">
                 <i class="material-icons">dehaze</i>
@@ -68,7 +63,7 @@
     <section class="about-section" id="about-section">
         <div class="brand-nav">
             <div class="brand">
-                <h2>Sammydepoj</h2>
+                <h2 class="h2-brandname">Sammydepoj</h2>
             </div>
             <span class="menu-icon" id="menu">
                 <i class="material-icons">dehaze</i>
@@ -215,7 +210,7 @@
                 </a>
             </div>
             <div class="brand">
-                <h2>Sammydepoj 2022</h2>
+                <h2 class="h2-brandname">Sammydepoj 2022</h2>
             </div>
         </div>
     </section>

@@ -8,7 +8,19 @@ let menu = document.getElementsByClassName('menu-icon')[0];
 
 function modeToggle(){
     var element = document.body;
-  element.classList.toggle("dark-mode") 
+  element.classList.toggle("dark-mode");
+  
+ var sunIcon=document.getElementById('sun-icon');
+ var moonIcon=document.getElementById('moon-icon');
+
+  if (element.classList.contains("dark-mode")){
+    moonIcon.style.display="block";
+    sunIcon.style.display="none";
+  }
+  else{
+    sunIcon.style.display="block";
+    moonIcon.style.display="none";
+  }
 }
 
 // var brandName =document.getElementById("brandName");
