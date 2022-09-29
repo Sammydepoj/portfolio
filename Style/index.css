@@ -22,7 +22,7 @@
     --primary-color:#828282;    
     --secondary-color:#FDC435;
     --text-color:navy;
-    --title-color:#fff;
+    --title-color:var(--primary-color);
     --border-color:#fff;
     --background-color:black;
 }
