@@ -424,10 +424,14 @@ form div input,textarea{
     align-items: center;
     margin: 0rem;
 }
+.socials a{
+    text-decoration: none;
+}
 .social-icons{
-    margin: 0rem 1rem 0rem;
+    margin:1rem;
     color: var(--text-color);
 }
+
 footer{
     width: 100%;
     background-image: url('/Assets/footerimg.png');
@@ -437,7 +441,7 @@ footer{
     background-repeat: no-repeat no-repeat;
     position: fixed;
     bottom: 0;
-    
+    left: 0;  
 }
 
 
