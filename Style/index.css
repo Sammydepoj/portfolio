@@ -539,8 +539,11 @@ footer{
     li a{
         font-size: 14px;
     }
+    
     .hero-text{
-        width: 55%;
+        width: 50%;
+        justify-self: center;
+        align-self: center;
     }
     .title{
         margin-top: 0.5rem;
