@@ -114,6 +114,8 @@ li a:hover{
 .hero{
 display: flex;
 justify-content: space-between;
+justify-self: flex-end;
+align-self: flex-end;
 }
 .hero-text{
     width: 50%;
