@@ -4,10 +4,7 @@ let menu = document.getElementsByClassName('menu-icon')[0];
 let projectSection = document.getElementById('project-section');
 let contactSection = document.getElementById('getInTouch');
 
-
-
-
-
+// dark mode toggle
 function modeToggle(){
     var element = document.body;
   element.classList.toggle("dark-mode");
@@ -18,11 +15,17 @@ function modeToggle(){
   if (element.classList.contains("dark-mode")){
     sunIcon.style.display="block";
     moonIcon.style.display="none";
+    localStorage.setItem('dark-mode', 'enabled');
   }
   else{
     moonIcon.style.display="block";
     sunIcon.style.display="none";
+    localStorage.setItem('dark-mode', 'disabled');
   }
+}
+// saving darkmode settings according to users system settings
+if(localStorage.getItem('dark-mode') == 'enabled'){
+    document.body.classList.toggle('dark-mode');
 }
 
 function aboutshow() {
@@ -62,8 +65,6 @@ function showContactSection(){
 function contactSectionClose(){
     contactSection.style.display="none"
 }
-
-
 // harmbuger
     menu.onclick=function(){
     document.getElementById('ul').style.display="block";
@@ -76,3 +77,10 @@ function closeModal(){
         showMenu.style.display="block";
     }
 }
+
+
+
+// Gsap animation starts here
+// var tl= new TimeLineLite;
+// var nmn =document.getElementById('title')
+// tl.to(nmn, 1, { scaleX: 1.5, scaleY: 1.5, backgroundColor: "#454545", ease: Back.easeOut.config(1.7)});
