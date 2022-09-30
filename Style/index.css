@@ -423,12 +423,13 @@ form div input,textarea{
     justify-content: center;
     align-items: center;
     margin: 0rem;
+    flex-wrap: nowrap;
 }
 .socials a{
     text-decoration: none;
 }
 .social-icons{
-    margin:1rem;
+    margin:0.6grem;
     color: var(--text-color);
 }
 
