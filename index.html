@@ -32,8 +32,8 @@
             <nav>
                 <ul id="ul">
                     <li><a href="#" id="about" onclick="aboutshow()">About Me</a></li>
-                    <li><a href="#projects">Project</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#" onclick="showProjectSection()">Projects</a></li>
+                    <li><a href="#" onclick="showContactSection()">Contacts</a></li>
                     <span class="close-nav" onclick="return closeModal()"> &times;</span>
                 </ul>
             </nav>
@@ -46,7 +46,7 @@
                     prioritizing the accessibility and performance of such software interfaces on, and for the web.</p>
 
                 <div class="links">
-                    <a href="#projects" class="btn btn1">Projects</a>
+                    <a href="#" onclick="showProjectSection()" class="btn btn1">Projects</a>
                     <a href="https://www.linkedin.com/in/adepoju-adeyemi-samuel-42bb4518a" class="btn">LinkedIn</a>
                 </div>
             </div>
@@ -71,8 +71,8 @@
             <nav>
                 <ul id="ul">
                     <li><a href="#" id="about" onclick="aboutshow()">About Me</a></li>
-                    <li><a href="#projects">Project</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#projects" onclick="showProjectSection()">Projects</a></li>
+                    <li><a href="#" onclick="showContactSection()">Contacts</a></li>
                     <span class="close-nav" onclick="return closeModal()" title="Close-modal"> &times;</span>
                 </ul>
             </nav>
@@ -99,11 +99,15 @@
 
 
     <!-- Projects Section Begins-->
-    <div class="projects" id="projects">
-        <h2>Projects</h2>
-    </div>
+   
+    <section class="proj-section" id="project-section">
 
-    <section class="proj-section">
+        <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a>
+
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+        </div>
+    
 
         <div class="project-card">
             <div class="proj-details">
@@ -174,11 +178,14 @@
 
     </section>
 
-    <div class="message" id="contacts">
-        <h2>Get in touch with me</h2>
-    </div>
+    <section class="getInTouch" id="getInTouch">
 
-    <section class="getInTouch">
+        <a href="#" id="close" onclick="contactSectionClose()" class="btn btn1"> &times </a>
+
+        <div class="message" id="contacts">
+            <h2>Get in touch with me</h2>
+        </div>
+
         <div class="message-form">
             <form action="">
                 <div>
@@ -194,29 +201,30 @@
                 <div>
                     <label>Message</label>
                     <br>
-                    <textarea cols="20" rows="10"></textarea>
+                    <textarea cols="20" rows="15"></textarea>
                 </div>
 
                 <button class="message-send">Send</button>
 
             </form>
         </div>
+    </section>
 
+    <footer>
         <div class="social-brand">
             <div class="socials">
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="Assets/insta.png" alt="instagram"></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="Assets/linkedin.png" alt="linkedin"></a>
-                <a href="mailto:samueladepoju86@yahoo.com"><img src="Assets/email.png" alt="email" />
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-instagram fa-2x social-icons"></i>
+                    </a>
+    
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2x social-icons"></i></a>
+                <a href="mailto:samueladepoju86@yahoo.com"><i class="fa-sharp fa-solid fa-envelope fa-2x social-icons"></i>
                 </a>
             </div>
             <div class="brand">
                 <h2 class="h2-brandname">Sammydepoj 2022</h2>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <img src="Assets/footerimg.png" alt="">
     </footer>
 
     <script src="./Scripts/index.js"></script>

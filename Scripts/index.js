@@ -1,6 +1,8 @@
 let show =document.getElementById('about-section')
 let showMenu =document.getElementById('ul');
 let menu = document.getElementsByClassName('menu-icon')[0];
+let projectSection = document.getElementById('project-section');
+let contactSection = document.getElementById('getInTouch');
 
 
 
@@ -14,29 +16,14 @@ function modeToggle(){
  var moonIcon=document.getElementById('moon-icon');
 
   if (element.classList.contains("dark-mode")){
-    moonIcon.style.display="block";
-    sunIcon.style.display="none";
-  }
-  else{
     sunIcon.style.display="block";
     moonIcon.style.display="none";
   }
+  else{
+    moonIcon.style.display="block";
+    sunIcon.style.display="none";
+  }
 }
-
-// var brandName =document.getElementById("brandName");
-
-// if (element.classList !='dark-mode') {
-
-//     brandName.style.color='#25282B';
-// }
-//     else{
-//         brandName.style.color='white';
-//     }
-    
-
-
-
-
 
 function aboutshow() {
     if (show.style.display=="block") {
@@ -49,6 +36,34 @@ function aboutshow() {
 function aboutClose(){
     show.style.display="none"
 }
+
+function showProjectSection(){
+    if (projectSection.style.display=="block") {
+        projectSection.style.display="none"
+    }
+    else{
+        projectSection.style.display="block"
+    }
+}
+
+function projectSectionClose(){
+    projectSection.style.display="none"
+}
+
+function showContactSection(){
+    if (contactSection.style.display=="block") {
+        contactSection.style.display="none"
+    }
+    else{
+        contactSection.style.display="block"
+    }
+}
+
+function contactSectionClose(){
+    contactSection.style.display="none"
+}
+
+
 // harmbuger
     menu.onclick=function(){
     document.getElementById('ul').style.display="block";

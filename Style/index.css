@@ -21,22 +21,30 @@
 .dark-mode{
     --primary-color:#828282;    
     --secondary-color:#FDC435;
-    --text-color:navy;
+    --text-color:#fff;
     --title-color:var(--primary-color);
     --border-color:#fff;
-    --background-color:black;
+    --background-color:#15202b;
 }
 body{
     background: var(--background-color);
     overflow-x: hidden;
 }
 /* dark-mode settings */
-
+.modeToggle{
+    cursor: pointer;
+    border: none;
+    background-color: var(--text-color);
+}
 .material-icons{
-    color: var(--primary-color);
+    color: var(--text-color);
+}
+#sun-icon{
+    display: none;
+    color: var(--background-color);
 }
 #moon-icon{
-    display: none;
+    color: var(--background-color);
 }
 
 /* dark-mode settings ends here */
@@ -57,10 +65,7 @@ header{
 }
 ul{
     display: flex;
-    /* justify-content: space-evenly; */
     z-index: 5;
-    flex: 1;
-    text-align: right;
 }
 #menu{
     display: none;
@@ -87,10 +92,11 @@ li a{
     line-height: 28px;
     color: var(--text-color);
 }
-.modeToggle{
-    cursor: pointer;
-    border: none;
+li a:hover{
+ color: var(--background-color);
+ background-color: var(--text-color);
 }
+
 /* Animation for hero texts */
 @keyframes example {
   0%   {left:-200px; top:0px;}
@@ -194,8 +200,10 @@ justify-content: space-between;
     background-color: var(--secondary-color);
     border: var(--border-color);
 }
-.btn1:hover{
-    background-color: #f7c852;
+.btn:hover{
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-color);
 }
 /* width for hero text */
 .txt{
@@ -264,6 +272,11 @@ justify-content: space-between;
 }
 .proj-section{
     padding:2rem 5rem;
+    display: none;
+    position: absolute;
+    top: 10%;
+    z-index: 7;
+    background-color: var(--background-color);
 }
 
 /* Animation for project card */
@@ -287,14 +300,16 @@ justify-content: space-between;
     animation-duration: 2s;
     animation-delay: 0.5s;
     animation-timing-function: ease-in;
+    background-color: var(--background-color);
 }
 .proj-details{
     width: 50%;
-    background: #FFFFFF;
+    background: var(--background-color);
     padding: 5rem 2rem;
     margin: 0rem;
     border-top-left-radius:1rem;
     border-bottom-left-radius: 1rem;
+    border: 1px solid var(--border-color);
 }
 .proj-details h3{
     font-family: 'Playfair Display';
@@ -323,7 +338,7 @@ justify-content: space-between;
     line-height: 150%;
     color: var(--text-color);
     text-decoration: none;
-    border: 0.1rem solid black;
+    border: 0.1rem solid var(--text-color);
     padding: 0.6rem ;
     border-radius: 1.2rem;
     margin: 0rem 1.5rem 0rem 0rem;
@@ -337,6 +352,14 @@ justify-content: space-between;
     padding: 5rem 2rem;
 }
 .proj-image img{
+    width: 100%;
+}
+.getInTouch{
+    display: none;
+    position: absolute;
+    top: 10%;
+    z-index: 7;
+    background-color: var(--background-color);
     width: 100%;
 }
 .message{
@@ -358,6 +381,7 @@ justify-content: space-between;
 .message-form{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 form{
     margin: 2rem auto;
@@ -400,16 +424,22 @@ form div input,textarea{
     align-items: center;
     margin: 0rem;
 }
-.socials img{
-    margin: 0rem 1rem 1rem;
+.social-icons{
+    margin: 0rem 1rem 0rem;
+    color: var(--text-color);
 }
 footer{
     width: 100%;
+    background-image: url('/Assets/footerimg.png');
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat no-repeat;
 }
-footer img{
+/* footer img{
     width: 100%;
     margin: -4rem 0rem;
-}
+} */
 
 
 
@@ -625,8 +655,16 @@ footer img{
         font-size: 12px;
         margin: 0rem 1rem 0rem 0rem;
     }
+    .message-form{
+        width: 100%;
+        padding:0rem 2rem;
+        overflow: hidden;
+    }
     .message-form form {
         padding: 1rem;
     }
     
+    /* .message-form form input{
+        width: 100%;
+    } */
 }
