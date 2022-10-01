@@ -30,6 +30,7 @@
 body {
   background: var(--background-color);
   overflow-x: hidden;
+  max-width: 1440px;
 }
 /* dark-mode settings */
 .modeToggle {
@@ -369,6 +370,12 @@ li a:hover {
   padding: 2rem 0rem;
   width: 75%;
 }
+.proj-details i {
+    color: var(--text-color); 
+    border: 0.1rem solid var(--text-color);
+    padding: 0.6rem;
+    border-radius: 1.2rem;
+}
 .proj-details a {
   font-family: "Roboto";
   font-style: normal;
@@ -377,9 +384,8 @@ li a:hover {
   line-height: 150%;
   color: var(--text-color);
   text-decoration: none;
-  border: 0.1rem solid var(--text-color);
-  padding: 0.6rem;
-  border-radius: 1.2rem;
+  /* border: 0.1rem solid var(--text-color); */
+ 
   margin: 0rem 1.5rem 0rem 0rem;
 }
 
@@ -480,7 +486,7 @@ footer {
   background-clip: border-box;
   background-position: center;
   background-repeat: no-repeat no-repeat;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
 }
@@ -517,6 +523,12 @@ footer {
   .about-image {
     width: 40%;
     padding: 2rem;
+  }
+  .proj-section {
+    padding: 0rem 2rem;
+  }
+  .project-card{
+    margin: 0.5rem 0rem 0rem;
   }
   .projects h2 {
     font-size: 40px;
@@ -606,6 +618,20 @@ footer {
   }
   .project-card {
     margin: 1rem auto;
+    flex-direction: column-reverse;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+
+  }
+  .proj-details,
+  .proj-image {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
   }
   .proj-details h3 {
     font-size: 24px;
