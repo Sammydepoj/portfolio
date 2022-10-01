@@ -66,7 +66,7 @@ header {
 }
 ul {
   display: flex;
-  z-index: 5;
+  z-index: 15;
 }
 #menu {
   display: none;
@@ -238,7 +238,7 @@ li a:hover {
   padding: 1rem 4rem;
   display: none;
   position: absolute;
-  top: 0;
+  top: 15%;
   background-color: var(--background-color);
   z-index: 9;
 }
@@ -281,7 +281,7 @@ li a:hover {
   padding: 2rem 5rem;
   display: none;
   position: absolute;
-  top: 10%;
+  top: 15%;
   z-index: 7;
   background-color: var(--background-color);
 }
@@ -396,7 +396,7 @@ li a:hover {
 .getInTouch {
   display: none;
   position: absolute;
-  top: 10%;
+  top: 15%;
   z-index: 7;
   background-color: var(--background-color);
   width: 100%;
