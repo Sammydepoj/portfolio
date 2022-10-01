@@ -486,7 +486,7 @@ footer {
   background-clip: border-box;
   background-position: center;
   background-repeat: no-repeat no-repeat;
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
