@@ -106,7 +106,7 @@ document.addEventListener(
   function(event) {
     // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
     if (
-      event.target.matches(".-close-nav") ||
+      event.target.matches(".close-nav") ||
       !event.target.closest("#ul")
     ) {
       closeModal()
