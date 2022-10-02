@@ -101,19 +101,17 @@ menu.onclick = function () {
     document.getElementById('ul').style.display = "block";
 }
 
-document.addEventListener(
-  "click",
-  function(event) {
+//document.addEventListener("click",function(event) {
     // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
-    if (
-      event.target.matches(".close-nav") ||
-      !event.target.closest("#ul")
-    ) {
-      closeModal()
-    }
-  },
-  false
-)
+   // if (
+     // event.target.matches(".close-nav") ||
+    //  !event.target.closest("#ul")
+  //  ) {
+  //    closeModal()
+ //   }
+ // },
+ // false
+//)
 
 function closeModal() {
     if (showMenu.style.display == "block") {
