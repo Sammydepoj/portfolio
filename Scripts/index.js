@@ -101,6 +101,24 @@ menu.onclick = function () {
     document.getElementById('ul').style.display = "block";
 }
 
+document.addEventListener(
+  "click",
+  function(event) {
+    // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+    if (
+      event.target.matches(".button-close-modal") ||
+      !event.target.closest(".modal")
+    ) {
+      closeModal()
+    }
+  },
+  false
+)
+
+function closeModal() {
+  document.querySelector(".modal").style.display = "none"
+}
+
 function closeModal() {
     if (showMenu.style.display == "block") {
         showMenu.style.display = "none"
