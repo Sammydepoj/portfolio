@@ -98,28 +98,37 @@ function contactSectionClose() {
 }
 // harmbuger
 menu.onclick = function () {
-    document.getElementById('ul').style.display = "block";
+    showMenu.style.display = "block";
 }
 
-//document.addEventListener("click",function(event) {
-    // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
-   // if (
-     // event.target.matches(".close-nav") ||
-    //  !event.target.closest("#ul")
-  //  ) {
-  //    closeModal()
- //   }
- // },
- // false
-//)
-
+// document.addEventListener("click",function(event) {
+//     // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+//    if (
+//      event.target.matches(".close-nav") ||
+//      !event.target.closest(showMenu)
+//    ) {
+//      closeModal()
+//    }
+//  },
+//  false
+// )
 function closeModal() {
-    if (showMenu.style.display == "block") {
-        showMenu.style.display = "none"
-    } else {
-        showMenu.style.display = "block";
-    }
+    showMenu.style.display = "none"
 }
+// const hideModalWindowOnBlur = (e) => {
+
+//     if(e.target === e.currentTarget) {
+//         hideModalWindow();
+//     }
+// }
+
+// window.onclick = function(event) {
+//     if (event.target == showMenu) {
+//       showMenu.style.display = "none";
+//     }
+//   }
+
+
 
 // Gsap animation starts here
 // var tl= new TimeLineLite;
