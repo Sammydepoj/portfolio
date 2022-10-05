@@ -211,24 +211,24 @@
         </div>
 
         <div class="message-form">
-            <form action="">
+            <form  method="post" action="./Scripts/form.php" >
                 <div>
                     <label>Name</label>
                     <br>
-                    <input type="text" name="" id="">
+                    <input type="text" name="name" id="">
                 </div>
                 <div>
                     <label>E-mail</label>
                     <br>
-                    <input type="email" name="" id="">
+                    <input type="email" name="email" id="">
                 </div>
                 <div>
                     <label>Message</label>
                     <br>
-                    <textarea cols="20" rows="15"></textarea>
+                    <textarea cols="20" rows="15" name="message"></textarea>
                 </div>
 
-                <button class="message-send">Send</button>
+                <button type="submit" name="send" class="message-send">Send</button>
 
             </form>
         </div>

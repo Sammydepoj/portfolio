@@ -196,7 +196,7 @@ li a:hover {
   z-index: -2;
   text-align: center;
   background-size: cover;
-  background-image: url("/Assets/yellow-bg.png");
+  background-image: url("../Assets/yellow-bg.png");
   /* background-repeat: no-repeat no-repeat;
     background-position: right;
     */
