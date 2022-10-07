@@ -346,15 +346,44 @@ li a:hover {
   padding: 0rem;
   margin: 2rem 0rem;
   position: relative;
-  transform: translateY(150px);
+  /* transform: translateY(150px); */
   opacity: 0;
-  transition: 1s all ease;
+  /* transition: 2s all ease; */
   background-color: var(--background-color);
+}
+/* project card scroll animation */
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .project-card.active{
   transform: translateY(0);
   opacity: 1;
 }
+.project-card.active.fade-right{
+  animation: fade-right 2s ease-in;
+}
+.project-card.active.fade-left{
+  animation: fade-left 2s ease-in;
+}
+
 .proj-details {
   width: 50%;
   background: var(--background-color);
@@ -584,20 +613,23 @@ footer {
 @media (max-width: 600px) {
   ul {
     display: none;
-    background-color: var(--primary-color);
-    position: fixed;
+    background-color: var(--background-color);
+    position: relative;
+    margin-top: 3rem;
     right: 0px;
     top: 0px;
     height: 100%;
     padding: 2rem;
     /* z-index: 5; */
+    width: 90%;
   }
   ul li {
-    margin: 0rem;
+    margin: 2rem auto;
   }
   ul li a {
-    font-size: 1rem;
-    margin: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 4rem auto;
   }
   #menu {
     display: block;
@@ -605,11 +637,9 @@ footer {
   .close-nav {
     display: block;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     border: 1px solid red;
-  }
-  li a {
-    font-size: 14px;
+    color: var(--text-color);
   }
 
   .hero-text {
