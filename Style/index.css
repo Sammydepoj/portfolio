@@ -97,6 +97,8 @@ li a {
 li a:hover {
   color: var(--background-color);
   background-color: var(--text-color);
+  padding: .2rem;
+  border-radius: .5rem;
 }
 
 /* Animation for hero texts */
@@ -164,16 +166,13 @@ li a:hover {
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  color: var(--title-color);
+  color: var(--primary-color);
   position: relative;
   animation-name: example;
   animation-duration: 0.7s;
   animation-delay: 0.5s;
   animation-timing-function: ease-in;
   margin-top: 2.5rem;
-}
-.waviy {
-  position: relative;
 }
 .autotype {
   font-family: "Playfair Display";
@@ -183,15 +182,10 @@ li a:hover {
   position: relative;
   display: inline-block;
   font-size: 50px;
+  margin-bottom: 1rem;
   color: var(--secondary-color);
-  /* animation: flip 2s infinite;
-  animation-delay: calc(.2s * var(--i));  */
 }
-@keyframes flip {
-  0%,80% {
-    transform: rotateY(360deg); 
-  }
-}
+
 .description {
   font-family: "Nunito";
   font-style: normal;
@@ -216,10 +210,12 @@ li a:hover {
   text-align: center;
   background-size: cover;
   background-image: url("../Assets/yellow-bg.png");
+  
   /* background-repeat: no-repeat no-repeat;
     background-position: right;
     */
 }
+
 .hero-image img {
   width: 50%;
   margin-top: 3.5rem;
@@ -254,6 +250,18 @@ li a:hover {
   width: 70%;
   text-align: left;
 }
+
+/* animation for cards */
+@keyframes rotateInLeft {
+  from {
+       transform-origin: 0% 0%;
+       transform: rotateY(180deg);
+       }
+  to {
+     transform-origin: 0% 0%;
+     transform: rotateY(0deg);
+     }
+     }
 .about-section {
   padding: 1rem 4rem;
   display: none;
@@ -261,6 +269,10 @@ li a:hover {
   top: 15%;
   background-color: var(--background-color);
   z-index: 9;
+  animation-name: rotateInLeft;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function:ease-in-out;
 }
 .aboutHeroPic {
   display: flex;
@@ -303,6 +315,10 @@ li a:hover {
   position: absolute;
   top: 15%;
   z-index: 7;
+  animation-name: rotateInLeft;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function:ease-in-out;
   background-color: var(--background-color);
 }
 .projects {
@@ -322,31 +338,6 @@ li a:hover {
   border-bottom: 0.4rem solid var(--secondary-color);
   padding-bottom: 1rem;
 }
-
-/* Animation for project card */
-@keyframes project-card {
-  0% {
-    right: -200px;
-    top: 0px;
-  }
-  25% {
-    right: -100px;
-    top: 0px;
-  }
-  50% {
-    right: -50px;
-    top: 0px;
-  }
-  75% {
-    right: -25px;
-    top: 0px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
-  }
-}
-
 .project-card {
   display: flex;
   place-content: stretch;
@@ -355,11 +346,14 @@ li a:hover {
   padding: 0rem;
   margin: 2rem 0rem;
   position: relative;
-  animation-name: project-card;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
   background-color: var(--background-color);
+}
+.project-card.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 .proj-details {
   width: 50%;
@@ -395,6 +389,11 @@ li a:hover {
     padding: 0.6rem;
     border-radius: 1.2rem;
 }
+.proj-details i:hover{
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--primary-color);
+}
 .proj-details a {
   font-family: "Roboto";
   font-style: normal;
@@ -425,6 +424,10 @@ li a:hover {
   z-index: 7;
   background-color: var(--background-color);
   width: 100%;
+  animation-name: rotateInLeft;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function:ease-in-out;
 }
 .message {
   display: flex;
@@ -478,6 +481,7 @@ textarea {
   padding: 0.5rem 1.5rem;
   float: right;
   margin: 1rem;
+  cursor: pointer;
 }
 .message-form div {
   margin-top: 2rem;
@@ -517,9 +521,7 @@ footer {
   .hero-text h1 {
     font-size: 40px;
   }
-  .autotype{
 
-  }
 }
 
 @media (max-width: 900px) {

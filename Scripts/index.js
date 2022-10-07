@@ -81,6 +81,28 @@ function showProjectSection() {
     }
 }
 
+// Project Card animation
+
+function reveal() {
+    var projectCard= document.querySelectorAll(".project-card");
+  
+    for (var i = 0; i < projectCard.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = projectCard[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        projectCard[i].classList.add("active");
+      } else {
+        projectCard[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+  reveal();
+
+
 function projectSectionClose() {
     projectSection.style.display = "none"
 }
