@@ -158,20 +158,39 @@ li a:hover {
   animation-delay: 0.5s;
   animation-timing-function: ease-in;
 }
-.hero-text h1 {
+.intro {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 24px;
   line-height: 120%;
   color: var(--title-color);
-  /* width: 80%;
-    text-align: left; */
   position: relative;
   animation-name: example;
   animation-duration: 0.7s;
   animation-delay: 0.5s;
   animation-timing-function: ease-in;
+  margin-top: 2.5rem;
+}
+.waviy {
+  position: relative;
+}
+.autotype {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  color: var(--secondary-color);
+  /* animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i));  */
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg); 
+  }
 }
 .description {
   font-family: "Nunito";
@@ -481,7 +500,7 @@ textarea {
 
 footer {
   width: 100%;
-  background-image: url("/Assets/footerimg.png");
+  background-image: url("../Assets/footerimg.png");
   background-size: cover;
   background-clip: border-box;
   background-position: center;

@@ -4,6 +4,16 @@ let menu = document.getElementsByClassName('menu-icon')[0];
 let projectSection = document.getElementById('project-section');
 let contactSection = document.getElementById('getInTouch');
 
+
+// Auto type
+
+let type    = new Typed(".autotype",{
+    strings: ["Adepoju Adeyemi Samuel","a Software Engineer","a Web Developer","a UI Designer"],
+    typeSpeed:150,
+    backSpeed:150,
+    loop:true
+})
+
 // dark mode toggle
 function modeToggle() {
     var element = document.body;
