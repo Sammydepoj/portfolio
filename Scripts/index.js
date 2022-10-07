@@ -130,7 +130,10 @@ function contactSectionClose() {
 }
 // harmbuger
 menu.onclick = function () {
-    showMenu.style.display = "block";
+    
+            showMenu.style.display = "block";
+
+    
 }
 
 // document.addEventListener("click",function(event) {

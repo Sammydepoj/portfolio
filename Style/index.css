@@ -10,6 +10,7 @@
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --primary-color: #828282;
@@ -31,6 +32,10 @@ body {
   background: var(--background-color);
   overflow-x: hidden;
   max-width: 1440px;
+  animation-name: rotateInLeft;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function:ease-in-out
 }
 /* dark-mode settings */
 .modeToggle {
@@ -615,13 +620,17 @@ footer {
     display: none;
     background-color: var(--background-color);
     position: relative;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     right: 0px;
     top: 0px;
     height: 100%;
     padding: 2rem;
     /* z-index: 5; */
-    width: 90%;
+    width: 100%;
+    animation-name: rotateInLeft;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in-out;
   }
   ul li {
     margin: 2rem auto;
@@ -631,8 +640,15 @@ footer {
     font-size: 2rem;
     margin: 4rem auto;
   }
+  li a:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: .2rem;
+    border-radius: .5rem;
+  }
   #menu {
     display: block;
+    /* z-index: 100; */
   }
   .close-nav {
     display: block;
