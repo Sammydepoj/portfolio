@@ -517,6 +517,9 @@ footer {
   .hero-text h1 {
     font-size: 40px;
   }
+  .autotype{
+
+  }
 }
 
 @media (max-width: 900px) {
@@ -525,6 +528,9 @@ footer {
   }
   .hero-text h1 {
     font-size: 36px;
+  }
+  .autotype{
+    font-size: 35px;
   }
   .description {
     font-size: 16px;
@@ -617,6 +623,9 @@ footer {
     font-size: 22px;
     width: 100%;
   }
+  .autotype{
+    font-size: 25px;
+  }
   .description {
     line-height: 25px;
     font-size: 14px;
@@ -703,6 +712,9 @@ footer {
   }
   .hero-text {
     width: 100%;
+  }
+  .autotype{
+    font-size: 20px;
   }
   .title {
     margin-top: 1rem;
