@@ -37,49 +37,49 @@ if (localStorage.getItem('dark-mode') == 'enabled') {
     document.body.classList.toggle('dark-mode');
 }
 
-// function aboutshow() {
-//     if (show.style.display == "block") {
-//         show.style.display = "none";
-//     } else {
-//         show.style.display = "block";
-//         if (showMenu.style.display == "block") {
-//             showMenu.style.display = "none";
+function aboutshow() {
+    if (show.style.display == "block") {
+        show.style.display = "none";
+    } else {
+        show.style.display = "block";
+        if (showMenu.style.display == "block") {
+            showMenu.style.display = "none";
 
-//             if (contactSection.style.display == "block") {
-//                 contactSection.style.display = "none";
-//             }
+            if (contactSection.style.display == "block") {
+                contactSection.style.display = "none";
+            }
 
-//             if (projectSection.style.display == "block") {
-//                 projectSection.style.display = "none";
-//             }
+            if (projectSection.style.display == "block") {
+                projectSection.style.display = "none";
+            }
 
 
-//         }
-//     }
-// }
+        }
+    }
+}
 
 // function aboutClose() {
 //     show.style.display = "none"
 // }
 
-// function showProjectSection() {
-//     if (projectSection.style.display == "block") {
-//         projectSection.style.display = "none"
-//     } else {
-//         projectSection.style.display = "block";
-//         if (showMenu.style.display == "block") {
-//             showMenu.style.display = "none";
-//         }
-//         if (show.style.display == "block") {
-//             show.style.display = "none";
-//         }
+function showProjectSection() {
+    if (projectSection.style.display == "block") {
+        projectSection.style.display = "none"
+    } else {
+        projectSection.style.display = "block";
+        if (showMenu.style.display == "block") {
+            showMenu.style.display = "none";
+        }
+        if (show.style.display == "block") {
+            show.style.display = "none";
+        }
 
-//         if (contactSection.style.display == "block") {
-//             contactSection.style.display = "none";
-//         }
+        if (contactSection.style.display == "block") {
+            contactSection.style.display = "none";
+        }
 
-//     }
-// }
+    }
+}
 
 // Project Card animation
 
@@ -107,23 +107,23 @@ reveal();
 //     projectSection.style.display = "none"
 // }
 
-// function showContactSection() {
-//     if (contactSection.style.display == "block") {
-//         contactSection.style.display = "none"
-//     } else {
-//         contactSection.style.display = "block";
-//         if (showMenu.style.display == "block") {
-//             showMenu.style.display = "none";
-//         }
-//         if (projectSection.style.display == "block") {
-//             projectSection.style.display = "none";
-//         }
+function showContactSection() {
+    if (contactSection.style.display == "block") {
+        contactSection.style.display = "none"
+    } else {
+        contactSection.style.display = "block";
+        if (showMenu.style.display == "block") {
+            showMenu.style.display = "none";
+        }
+        if (projectSection.style.display == "block") {
+            projectSection.style.display = "none";
+        }
 
-//         if (show.style.display == "block") {
-//             show.style.display = "none";
-//         }
-//     }
-// }
+        if (show.style.display == "block") {
+            show.style.display = "none";
+        }
+    }
+}
 
 // function contactSectionClose() {
 //     contactSection.style.display = "none"
@@ -162,10 +162,3 @@ function closeModal() {
 //       showMenu.style.display = "none";
 //     }
 //   }
-
-
-
-// Gsap animation starts here
-// var tl= new TimeLineLite;
-// var nmn =document.getElementById('title')
-// tl.to(nmn, 1, { scaleX: 1.5, scaleY: 1.5, backgroundColor: "#454545", ease: Back.easeOut.config(1.7)});
