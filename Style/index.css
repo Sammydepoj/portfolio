@@ -589,7 +589,7 @@ footer {
   }
   .about-txt h2 {
     font-size: 36px;
-    width: 85%;
+    /* width: 85%; */
   }
   .about-txt p {
     font-size: 16px;
