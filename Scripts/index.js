@@ -7,12 +7,12 @@ let contactSection = document.getElementById('getInTouch');
 
 // Auto type
 
-let type    = new Typed(".autotype",{
-    strings: ["Adepoju Adeyemi Samuel","a Software Engineer","a Web Developer","a UI Designer"],
-    typeSpeed:150,
-    backSpeed:150,
-    loop:true
-})
+let type = new Typed(".autotype", {
+    strings: ["Sammy", "A Software Engineer", "A Software Developer", "A UI Designer"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+});
 
 // dark mode toggle
 function modeToggle() {
@@ -37,103 +37,103 @@ if (localStorage.getItem('dark-mode') == 'enabled') {
     document.body.classList.toggle('dark-mode');
 }
 
-function aboutshow() {
-    if (show.style.display == "block") {
-        show.style.display = "none";
-    } else {
-        show.style.display = "block";
-        if (showMenu.style.display == "block") {
-            showMenu.style.display = "none";
+// function aboutshow() {
+//     if (show.style.display == "block") {
+//         show.style.display = "none";
+//     } else {
+//         show.style.display = "block";
+//         if (showMenu.style.display == "block") {
+//             showMenu.style.display = "none";
 
-            if (contactSection.style.display == "block") {
-                contactSection.style.display = "none";
-            }
+//             if (contactSection.style.display == "block") {
+//                 contactSection.style.display = "none";
+//             }
 
-            if (projectSection.style.display == "block") {
-                projectSection.style.display = "none";
-            }
+//             if (projectSection.style.display == "block") {
+//                 projectSection.style.display = "none";
+//             }
 
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
-function aboutClose() {
-    show.style.display = "none"
-}
+// function aboutClose() {
+//     show.style.display = "none"
+// }
 
-function showProjectSection() {
-    if (projectSection.style.display == "block") {
-        projectSection.style.display = "none"
-    } else {
-        projectSection.style.display = "block";
-        if (showMenu.style.display == "block") {
-            showMenu.style.display = "none";
-        }
-        if (show.style.display == "block") {
-            show.style.display = "none";
-        }
+// function showProjectSection() {
+//     if (projectSection.style.display == "block") {
+//         projectSection.style.display = "none"
+//     } else {
+//         projectSection.style.display = "block";
+//         if (showMenu.style.display == "block") {
+//             showMenu.style.display = "none";
+//         }
+//         if (show.style.display == "block") {
+//             show.style.display = "none";
+//         }
 
-        if (contactSection.style.display == "block") {
-            contactSection.style.display = "none";
-        }
+//         if (contactSection.style.display == "block") {
+//             contactSection.style.display = "none";
+//         }
 
-    }
-}
+//     }
+// }
 
 // Project Card animation
 
 function reveal() {
-    var projectCard= document.querySelectorAll(".project-card");
-  
+    var projectCard = document.querySelectorAll(".project-card");
+
     for (var i = 0; i < projectCard.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = projectCard[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        projectCard[i].classList.add("active");
-      } else {
-        projectCard[i].classList.remove("active");
-      }
-    }
-  }
-  
-  window.addEventListener("scroll", reveal);
-  reveal();
+        var windowHeight = window.innerHeight;
+        var elementTop = projectCard[i].getBoundingClientRect().top;
+        var elementVisible = 150;
 
-
-function projectSectionClose() {
-    projectSection.style.display = "none"
-}
-
-function showContactSection() {
-    if (contactSection.style.display == "block") {
-        contactSection.style.display = "none"
-    } else {
-        contactSection.style.display = "block";
-        if (showMenu.style.display == "block") {
-            showMenu.style.display = "none";
-        }
-        if (projectSection.style.display == "block") {
-            projectSection.style.display = "none";
-        }
-
-        if (show.style.display == "block") {
-            show.style.display = "none";
+        if (elementTop < windowHeight - elementVisible) {
+            projectCard[i].classList.add("active");
+        } else {
+            projectCard[i].classList.remove("active");
         }
     }
 }
 
-function contactSectionClose() {
-    contactSection.style.display = "none"
-}
+window.addEventListener("scroll", reveal);
+reveal();
+
+
+// function projectSectionClose() {
+//     projectSection.style.display = "none"
+// }
+
+// function showContactSection() {
+//     if (contactSection.style.display == "block") {
+//         contactSection.style.display = "none"
+//     } else {
+//         contactSection.style.display = "block";
+//         if (showMenu.style.display == "block") {
+//             showMenu.style.display = "none";
+//         }
+//         if (projectSection.style.display == "block") {
+//             projectSection.style.display = "none";
+//         }
+
+//         if (show.style.display == "block") {
+//             show.style.display = "none";
+//         }
+//     }
+// }
+
+// function contactSectionClose() {
+//     contactSection.style.display = "none"
+// }
 // harmbuger
 menu.onclick = function () {
-    
-            showMenu.style.display = "block";
 
-    
+    showMenu.style.display = "block";
+
+
 }
 
 // document.addEventListener("click",function(event) {

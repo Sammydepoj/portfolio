@@ -35,7 +35,7 @@
 
             <nav>
                 <ul id="ul">
-                    <li><a href="#" id="about" onclick= "aboutshow()">About Me</a></li>
+                    <li><a href="#" id="about" onclick="aboutshow()">About Me</a></li>
                     <li><a href="#" onclick="showProjectSection()">Projects</a></li>
                     <li><a href="#" onclick="showContactSection()">Contacts</a></li>
                     <span class="close-nav" onclick="return closeModal()"> &times;</span>
@@ -45,17 +45,17 @@
         <div class="hero">
             <div class="hero-text">
                 <!-- <p class="title" id="title">WEB DEVELOPER</p> -->
-                <h1 class="intro">Hello, I am 
+                <h1 class="intro">Hello, I am
                     <br>
                     <span class="autotype"></span>
                 </h1>
-        
+
                 <p class="description">I create experiences that are aesthetically pleasing for people, while
                     prioritizing the accessibility and performance of such software interfaces on, and for the web.</p>
-
                 <div class="links">
-                    <a href="#" onclick="showProjectSection()" class="btn btn1">Projects</a>
-                    <a href="https://www.linkedin.com/in/adepoju-adeyemi-samuel-42bb4518a" class="btn">LinkedIn</a>
+                    <a href="#projects" onclick="showProjectSection()" class="btn btn1">Projects</a>
+                    <a href="https://www.linkedin.com/in/adepoju-adeyemi-samuel-42bb4518a" target="_blank"
+                        class="btn">LinkedIn</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -66,39 +66,45 @@
     <!-- Header ends -->
 
 
+    <div class="seeMore">
+        <a href="#about-section" class="btn btn1">See More...</a>
+    </div>
+
 
     <!-- About Me Section -->
     <section class="about-section" id="about-section">
-        <!-- <div class="brand-nav">
-            <span class="menu-icon" id="menu">
-                <i class="material-icons">dehaze</i>
-            </span>
-            <nav>
-                <ul id="ul">
-                    <li><a href="#" id="about" onclick="aboutshow()">About Me</a></li>
-                    <li><a href="#" onclick="showProjectSection()">Projects</a></li>
-                    <li><a href="#" onclick="showContactSection()">Contacts</a></li>
-                    <span class="close-nav" onclick="return closeModal()" title="Close-modal"> &times;</span>
-                </ul>
-            </nav>
-        </div> -->
         <div class="aboutHeroPic" id="about-modal">
             <div class="about-txt">
                 <h2>About me</h2>
-                <p>I'm a professional web developer with years of experience. I'm focused and passionate about building
+                <!-- <p>I'm a professional web developer with years of experience. I'm focused and passionate about building
                     user interface with the aim of giving users the best experience they can have while surfing the
                     internet.
                     I focus on using html,css and javascript to build interactive and responsive user interfaces across
                     all platforms.
                     I also have experience in PHP for server-side scripting while i am currently learning React.js and
                     Bootstrap Css.
+                </p> -->
+                <p>
+                    I'm a creative Computer science graduate with 1+ years of experience in software development. I
+                    demonstrate skills in developing web applications using Javascript, React JS, SCSS, HTML and CSS;
+                    and
+                    posses some practical knowledge of backend (PHP and MySql) development and database concepts with
+                    interface designing and implementation.
+                    i'm a team player with the abillity to complete projects on time.
+                    I'm eager and looking to join a growth oriented team as an
+                    <b>
+                        entry level software developer
+                    </b> to learn and leverage strong programming skills to maintain efficinet code base for
+                    reusabillityand build reliable software products for businesses.
                 </p>
-                <a href="https://docs.google.com/document/d/1cuyJr8DEcLbNy2xo2TzYxe9g53VwR3Xx/edit?usp=drivesdk&ouid=104952003013059085859&rtpof=true&sd=true" class="btn btn1">Resume</a>
-                <a href="#" id="close" onclick="aboutClose()" class="btn btn1">&times</a>
+
+                <a href="https://docs.google.com/document/d/1cuyJr8DEcLbNy2xo2TzYxe9g53VwR3Xx/edit?usp=drivesdk&ouid=104952003013059085859&rtpof=true&sd=true"
+                    class="btn btn1">View my Resume</a>
+                <!-- <a href="#" id="close" onclick="aboutClose()" class="btn btn1">&times</a> -->
             </div>
-            <div class="about-image">
+            <!-- <div class="about-image">
                 <img src="Assets/sammydepoj.png" alt='my-picture' />
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -107,7 +113,7 @@
 
     <section class="proj-section" id="project-section">
 
-        <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a>
+        <!-- <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a> -->
 
         <div class="projects" id="projects">
             <h2>Projects</h2>
@@ -191,8 +197,10 @@
         <div class="project-card fade-right">
             <div class="proj-details">
                 <h3>PricingHub</h3>
-                <p> A platform for comparing the prices of gadgets across three E-commerce platforms namely Kara ng, Konga, and Jumia. 
-                    The website is expected to increase the sales on these platforms, serve as a key source of information by 
+                <p> A platform for comparing the prices of gadgets across three E-commerce platforms namely Kara ng,
+                    Konga, and Jumia.
+                    The website is expected to increase the sales on these platforms, serve as a key source of
+                    information by
                     documenting price trends and generate leads and inquiries for these platforms.</p>
                 <i class="fa-solid fa-link">
                     <a target="_blank" href="https://team25ph.herokuapp.com/">View Project</a>
@@ -206,12 +214,12 @@
                 <img src="Assets/pricinghub.jpeg" alt="project image" />
             </div>
         </div>
-        <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a>
+        <!-- <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a> -->
     </section>
 
     <section class="getInTouch" id="getInTouch">
 
-        <a href="#" id="close" onclick="contactSectionClose()" class="btn btn1"> &times </a>
+        <!-- <a href="#" id="close" onclick="contactSectionClose()" class="btn btn1"> &times </a> -->
 
         <div class="message" id="contacts">
             <h2>Get in touch with me</h2>
@@ -243,6 +251,7 @@
 
     <footer>
         <div class="social-brand">
+            <p>Connect with me on my socials </p>
             <div class="socials">
 
                 <a href="https://www.twitter.com/sammydepoj " target="_blank" rel="noopener noreferrer">
