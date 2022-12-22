@@ -115,9 +115,9 @@ function showContactSection() {
         if (showMenu.style.display == "block") {
             showMenu.style.display = "none";
         }
-        if (projectSection.style.display == "block") {
-            projectSection.style.display = "none";
-        }
+        // if (projectSection.style.display == "block") {
+        //     projectSection.style.display = "none";
+        // }
 
         if (show.style.display == "block") {
             show.style.display = "none";
