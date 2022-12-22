@@ -42,19 +42,19 @@ function aboutshow() {
         show.style.display = "none";
     } else {
         show.style.display = "block";
-        if (showMenu.style.display == "block") {
-            showMenu.style.display = "none";
+        // if (showMenu.style.display == "block") {
+        //     showMenu.style.display = "none";
 
-            // if (contactSection.style.display == "block") {
-            //     contactSection.style.display = "none";
-            // }
+        //     // if (contactSection.style.display == "block") {
+        //     //     contactSection.style.display = "none";
+        //     // }
 
-            // if (projectSection.style.display == "block") {
-            //     projectSection.style.display = "none";
-            // }
+        //     // if (projectSection.style.display == "block") {
+        //     //     projectSection.style.display = "none";
+        //     // }
 
 
-        }
+        // }
     }
 }
 
