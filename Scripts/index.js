@@ -42,19 +42,19 @@ function aboutshow() {
         show.style.display = "none";
     } else {
         show.style.display = "block";
-        // if (showMenu.style.display == "block") {
-        //     showMenu.style.display = "none";
+        if (showMenu.style.display == "block") {
+            showMenu.style.display = "none";
 
-        //     // if (contactSection.style.display == "block") {
-        //     //     contactSection.style.display = "none";
-        //     // }
+            //     // if (contactSection.style.display == "block") {
+            //     //     contactSection.style.display = "none";
+            //     // }
 
-        //     // if (projectSection.style.display == "block") {
-        //     //     projectSection.style.display = "none";
-        //     // }
+            //     // if (projectSection.style.display == "block") {
+            //     //     projectSection.style.display = "none";
+            //     // }
 
 
-        // }
+        }
     }
 }
 
@@ -70,9 +70,9 @@ function showProjectSection() {
         if (showMenu.style.display == "block") {
             showMenu.style.display = "none";
         }
-        if (show.style.display == "block") {
-            show.style.display = "none";
-        }
+        // if (show.style.display == "block") {
+        //     show.style.display = "none";
+        // }
 
         // if (contactSection.style.display == "block") {
         //     contactSection.style.display = "none";
@@ -119,9 +119,9 @@ function showContactSection() {
         //     projectSection.style.display = "none";
         // }
 
-        if (show.style.display == "block") {
-            show.style.display = "none";
-        }
+        // if (show.style.display == "block") {
+        //     show.style.display = "none";
+        // }
     }
 }
 
@@ -130,10 +130,7 @@ function showContactSection() {
 // }
 // harmbuger
 menu.onclick = function () {
-
     showMenu.style.display = "block";
-
-
 }
 
 // document.addEventListener("click",function(event) {
