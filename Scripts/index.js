@@ -45,13 +45,13 @@ function aboutshow() {
         if (showMenu.style.display == "block") {
             showMenu.style.display = "none";
 
-            if (contactSection.style.display == "block") {
-                contactSection.style.display = "none";
-            }
+            // if (contactSection.style.display == "block") {
+            //     contactSection.style.display = "none";
+            // }
 
-            if (projectSection.style.display == "block") {
-                projectSection.style.display = "none";
-            }
+            // if (projectSection.style.display == "block") {
+            //     projectSection.style.display = "none";
+            // }
 
 
         }
@@ -74,9 +74,9 @@ function showProjectSection() {
             show.style.display = "none";
         }
 
-        if (contactSection.style.display == "block") {
-            contactSection.style.display = "none";
-        }
+        // if (contactSection.style.display == "block") {
+        //     contactSection.style.display = "none";
+        // }
 
     }
 }
