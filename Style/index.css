@@ -14,15 +14,17 @@
 }
 :root {
   --primary-color: #000;
-  --secondary-color: #1da1f2;
+  --secondary-color: #7360ff;
   --text-color: #25282b;
   --title-color: #333333;
   --border-color: black;
   --background-color: #e5e5e5;
 }
+/* #7360ff */
+/* #9a9bef */
 .dark-mode {
   --primary-color: #fff;
-  --secondary-color: #1da1f2;
+  --secondary-color: #7360ff;
   --text-color: #fff;
   --title-color: var(--primary-color);
   --border-color: #fff;
@@ -214,7 +216,7 @@ li a:hover {
   z-index: -2;
   text-align: center;
   background-size: cover;
-  background-image: url("../Assets/yellow-bg4.png");
+  background-image: url("../Assets/yellow-bg5.png");
 
   /* background-repeat: no-repeat no-repeat;
     background-position: right;
@@ -224,6 +226,9 @@ li a:hover {
 .hero-image img {
   width: 50%;
   margin-top: 3.5rem;
+}
+.hero-image img:hover{
+  transform: scale(1.5);
 }
 .links {
   margin: 2rem auto;
@@ -322,7 +327,7 @@ li a:hover {
 } */
 .proj-section {
   margin-top: 5rem;
-  padding: 2rem 5rem;
+  padding: 0rem 5rem;
   /* display: none;
   position: absolute;
   top: 15%;
@@ -399,7 +404,7 @@ li a:hover {
 .proj-details {
   width: 50%;
   background: var(--background-color);
-  padding: 5rem 2rem;
+  padding: 1rem 2rem;
   margin: 0rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -429,6 +434,7 @@ li a:hover {
   border: 0.1rem solid var(--text-color);
   padding: 0.6rem;
   border-radius: 1.2rem;
+  margin: 0rem 0.5rem;
 }
 .proj-details i:hover {
   background-color: var(--secondary-color);
@@ -451,12 +457,15 @@ li a:hover {
 .proj-image {
   width: 50%;
   border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  /* border-bottom-right-radius: 1rem; */
   border: 1px solid var(--border-color);
-  padding: 5rem 2rem;
+  padding: 0.5rem;
 }
 .proj-image img {
   width: 100%;
+}
+.proj-image img:hover {
+  transform: scale(1.1);
 }
 .getInTouch {
   /* display: none;
@@ -552,7 +561,7 @@ textarea {
 
 footer {
   width: 100%;
-  background-image: url("../Assets/footerimg4.png");
+  background-image: url("../Assets/footerimg5.png");
   background-size: cover;
   background-clip: border-box;
   background-position: center;

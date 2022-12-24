@@ -8,7 +8,7 @@ let contactSection = document.getElementById('getInTouch');
 // Auto type
 
 let type = new Typed(".autotype", {
-    strings: ["Sammy", "A Software Engineer", "A Software Developer", "A UI Designer"],
+    strings: ["Sammy", "A Software Developer", "A UI Designer"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true
