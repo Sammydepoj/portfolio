@@ -326,6 +326,12 @@ li a:hover {
   width: 90%;
   height: 200px;
 } */
+.notice {
+  text-align: center;
+  color: rgb(244, 75, 75);
+  font-size: 1rem;
+  margin: 1rem;
+}
 .proj-section {
   margin-top: 5rem;
   padding: 0rem 5rem;
@@ -766,6 +772,9 @@ footer {
   }
   .about-image {
     display: none;
+  }
+  .notice {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 545px) {
