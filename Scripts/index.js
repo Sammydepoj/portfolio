@@ -50,10 +50,11 @@ seeMore.addEventListener('click', function (e) {
 
 showMenu.addEventListener('click', function (e) {
     e.preventDefault();
-    // console.log(e.target)
-    // let links = e.target.children;
-    // console.log(links);
+   
     // Matching strategy
+    if (showMenu.style.display == "block") {
+        showMenu.style.display = "none";
+    }
     if (e.target.classList.contains('page-nav')) {
         const id = e.target.getAttribute('href');
         document.querySelector(id).scrollIntoView({
