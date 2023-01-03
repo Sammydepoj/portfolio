@@ -59,6 +59,7 @@ body {
 /* dark-mode settings ends here */
 header {
   padding: 1rem 4rem 0rem;
+  height: 100vh;
 }
 .brand-nav {
   display: flex;
@@ -227,7 +228,7 @@ li a:hover {
   width: 50%;
   margin-top: 3.5rem;
 }
-.hero-image img:hover{
+.hero-image img:hover {
   transform: scale(1.5);
 }
 .links {
