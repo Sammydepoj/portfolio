@@ -41,13 +41,26 @@ if (localStorage.getItem('dark-mode') == 'enabled') {
 seeMore = document.querySelector('.seeMore');
 
 seeMore.addEventListener('click', function (e) {
-    show.getBoundingClientRect();
+    e.preventDefault();
     show.scrollIntoView({
         behavior: 'smooth'
     });
 });
 
 
+showMenu.addEventListener('click', function (e) {
+    e.preventDefault();
+    // console.log(e.target)
+    // let links = e.target.children;
+    // console.log(links);
+    // Matching strategy
+    if (e.target.classList.contains('page-nav')) {
+        const id = e.target.getAttribute('href');
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+});
 
 function aboutshow() {
     if (show.style.display == "block") {
