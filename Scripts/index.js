@@ -161,3 +161,17 @@ const date = new Date();
 let year = date.getFullYear();
 const copyright = document.getElementById('copyright');
 copyright.textContent = `© Sammydepoj ${year}`
+
+// CUSTOMIZED MOUSE/CURSOR
+
+const bouncer = document.querySelector('.bouncer');
+
+// document.addEventListener('mousemove', e =>{
+//     bouncer.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+// });
+
+document.addEventListener('scroll', e => {
+    bouncer.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+});
+
+// CUSTOMIZED MOUSE/CURSOR

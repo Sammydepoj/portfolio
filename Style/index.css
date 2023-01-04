@@ -5,7 +5,40 @@
   box-sizing: border-box;
   transition: background-color 0.6s ease, color 1s ease;
   scroll-margin-top: 2.5rem;
+  /* for customized mouse to be active */
+  /* cursor: none; */
 }
+/* ////////////////////////CUSTOMIZED CURSOR */
+.bouncer {
+  position: fixed;
+  width: 33px;
+  height: 33px;
+  background-color: #7360ff;
+  border-radius: 50%;
+  /* border: 3px solid rgb(0, 3, 3); */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursor 0.5s infinite alternate;
+  z-index: 100000;
+  /* mix-blend-mode: difference; */
+}
+
+.cursor:hover {
+  transform: scale(6);
+}
+
+@keyframes cursor {
+  from {
+    transform: scale(1);
+  }
+
+  /* to {
+    transform: scale(.7);
+  } */
+}
+/* //////////////////////////CUSTOMIZED CURSOR */
 *::before,
 *::after {
   margin: 0rem;
