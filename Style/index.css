@@ -225,7 +225,7 @@ li a:hover {
   animation-duration: 0.7s;
   animation-delay: 0.5s;
   animation-timing-function: ease-in;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 .autotype {
   font-family: "Playfair Display";
@@ -235,7 +235,7 @@ li a:hover {
   position: relative;
   display: inline-block;
   font-size: 50px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   color: var(--secondary-color);
 }
 
@@ -310,6 +310,131 @@ li a:hover {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+}
+
+.scroll-button {
+  position: relative;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+}
+
+.icon-scroll {
+  position: absolute;
+  bottom: -29%;
+  left: 50%;
+  width: 1em;
+  height: 0.5em;
+  transform: translateX(-50%) scale(2);
+  z-index: 1;
+}
+
+.icon-arrows::after,
+.icon-arrows::before {
+  content: "";
+}
+
+.icon-arrows span,
+.icon-arrows::after,
+.icon-arrows::before {
+  display: block;
+  width: 0.315em;
+  height: 0.315em;
+  border-right: 1px solid var(--secondary-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 0 0 0.125em 0.315em;
+  transform: rotate(45deg);
+  -webkit-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.icon-arrows::before {
+  margin-top: 0.315em;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.icon-scroll span {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.icon-arrows::after {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.icon-scroll .mouse {
+  height: 1.375em;
+  width: 0.875em;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2em;
+}
+
+.icon-scroll .wheel {
+  position: relative;
+  display: block;
+  height: 0.1875em;
+  width: 0.1875em;
+  margin: 0.1875em auto 0;
+  background: var(--secondary-color);
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  animation: mouse-wheel 1.2s ease infinite;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0.375em);
+  }
+}
+
+@keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0.375em);
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* animation for cards */

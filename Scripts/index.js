@@ -152,7 +152,6 @@ menu.onclick = function () {
     showMenu.style.display = "block";
 }
 
-
 function closeModal() {
     showMenu.style.display = "none"
 }
