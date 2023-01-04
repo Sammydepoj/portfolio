@@ -37,6 +37,28 @@ if (localStorage.getItem('dark-mode') == 'enabled') {
     document.body.classList.toggle('dark-mode');
 }
 
+// Sticky Navbar
+const header = document.querySelector('.header');
+const nav = document.querySelector('.brand-nav');
+const navHeight = nav.getBoundingClientRect().height;
+// console.log(navHeight);
+
+const stickyNav = function (entries) {
+    const [entry] = entries;
+    //   console.log(entry);
+
+    if (!entry.isIntersecting) nav.classList.add('sticky');
+    else nav.classList.remove('sticky');
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navHeight}px`,
+});
+
+headerObserver.observe(header);
+
 // Page Navigation
 seeMore = document.querySelector('.seeMore');
 
@@ -50,7 +72,7 @@ seeMore.addEventListener('click', function (e) {
 
 showMenu.addEventListener('click', function (e) {
     e.preventDefault();
-   
+
     // Matching strategy
     if (showMenu.style.display == "block") {
         showMenu.style.display = "none";
@@ -58,7 +80,8 @@ showMenu.addEventListener('click', function (e) {
     if (e.target.classList.contains('page-nav')) {
         const id = e.target.getAttribute('href');
         document.querySelector(id).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
+            // block: 'center',
         });
     }
 });

@@ -4,6 +4,7 @@
   padding: 0rem;
   box-sizing: border-box;
   transition: background-color 0.6s ease, color 1s ease;
+  scroll-margin-top: 2.5rem;
 }
 *::before,
 *::after {
@@ -64,6 +65,17 @@ header {
 .brand-nav {
   display: flex;
   justify-content: space-between;
+}
+.brand-nav.sticky {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  /* right: 0; */
+  z-index: 1000;
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+  width: 100%;
+  /* margin: 0rem 0rem 10rem 0rem; */
 }
 .h2-brandname {
   font-family: "Comfortaa";
@@ -279,7 +291,7 @@ li a:hover {
   }
 }
 .about-section {
-  margin-top: 15rem;
+  margin-top: 5rem;
   padding: 1rem 4rem;
   /* display: none;
   position: absolute;
