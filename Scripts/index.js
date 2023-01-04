@@ -60,9 +60,9 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 // Page Navigation
-seeMore = document.querySelector('.seeMore');
+scrollButton = document.querySelector('.scroll-button');
 
-seeMore.addEventListener('click', function (e) {
+scrollButton.addEventListener('click', function (e) {
     e.preventDefault();
     show.scrollIntoView({
         behavior: 'smooth'
