@@ -1,100 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAMMYDEPOJ</title>
-    <link rel="stylesheet" href="Style/index.css">
-    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style/index.css" />
+    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Top Left Bouncer -->
     <div class="bouncer"></div>
     <!-- Top Left Bouncer -->
     <!-- Header Begins -->
     <header class="header" id="header">
-        <div class="brand-nav">
-            <div class="brand">
-                <h2 id="brandName" class="h2-brandname">Sammydepoj</h2>
-            </div>
-
-            <button class="modeToggle" onclick="modeToggle()">
-                <i class="fa-regular fa-sun fa-2x" id="sun-icon"></i>
-
-                <i class="fa-solid fa-moon fa-2x" id="moon-icon"></i>
-            </button>
-
-            <span class="menu-icon" id="menu">
-                <i class="material-icons">dehaze</i>
-            </span>
-
-            <nav>
-                <ul id="ul">
-                    <li class="li"><a class="page-nav" href="#header">Home
-                        </a></li>
-                    <li class="li"><a class="page-nav" href="#about-section" id="about">About</a></li>
-                    <li class="li"><a class="page-nav" href="#projects">Projects</a></li>
-                    <li class="li"><a class="page-nav" href="#contacts">Contacts</a></li>
-                    <span class="close-nav" onclick="return closeModal()"> &times;</span>
-                </ul>
-            </nav>
+      <div class="brand-nav">
+        <div class="brand">
+          <h2 id="brandName" class="h2-brandname">Sammydepoj</h2>
         </div>
-        <div class="hero">
-            <div class="hero-text">
-                <!-- <p class="title" id="title">WEB DEVELOPER</p> -->
-                <h1 class="intro">Hello, I am
-                    <br>
-                    <span class="autotype"></span>
-                </h1>
 
-                <p class="description">I create experiences that are aesthetically pleasing for people, while
-                    prioritizing the accessibility and performance of such software interfaces on, and for the web.</p>
-                <div class="links">
-                    <a href="#projects" onclick="showProjectSection()" class="btn btn1">Projects</a>
-                    <a href="https://www.linkedin.com/in/adepoju-adeyemi-samuel-42bb4518a" target="_blank"
-                        class="btn">LinkedIn</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="Assets/sammydepoj.png" alt='my-picture' />
-            </div>
+        <button class="modeToggle" onclick="modeToggle()">
+          <i class="fa-regular fa-sun fa-2x" id="sun-icon"></i>
+
+          <i class="fa-solid fa-moon fa-2x" id="moon-icon"></i>
+        </button>
+
+        <span class="menu-icon" id="menu">
+          <i class="material-icons">dehaze</i>
+        </span>
+
+        <nav>
+          <ul id="ul">
+            <li class="li"><a class="page-nav" href="#header">Home </a></li>
+            <li class="li">
+              <a class="page-nav" href="#about-section" id="about">About</a>
+            </li>
+            <li class="li">
+              <a class="page-nav" href="#projects">Projects</a>
+            </li>
+            <li class="li">
+              <a class="page-nav" href="#contacts">Contacts</a>
+            </li>
+            <span class="close-nav" onclick="return closeModal()">
+              &times;</span
+            >
+          </ul>
+        </nav>
+      </div>
+      <div class="hero">
+        <div class="hero-text">
+          <!-- <p class="title" id="title">WEB DEVELOPER</p> -->
+          <h1 class="intro">
+            Hello, I am
+            <br />
+            <span class="autotype"></span>
+          </h1>
+
+          <p class="description">
+            I create experiences that are aesthetically pleasing for people,
+            while prioritizing the accessibility and performance of such
+            software interfaces on, and for the web.
+          </p>
+          <div class="links">
+            <a href="#projects" onclick="showProjectSection()" class="btn btn1"
+              >Projects</a
+            >
+            <a
+              href="https://www.linkedin.com/in/adepoju-adeyemi-samuel-42bb4518a"
+              target="_blank"
+              class="btn"
+              >LinkedIn</a
+            >
+          </div>
         </div>
-        <!-- <div class="seeMore">
+        <div class="hero-image">
+          <img src="Assets/sammydepoj.png" alt="my-picture" />
+        </div>
+      </div>
+      <!-- <div class="seeMore">
             <a href="#about-section" class="btn btn1">See More...</a>
         </div> -->
-        <div class="scroll-button">
-            <a href="#about-section" class="scroll">
-                <div class="icon-scroll">
-                    <div class="mouse">
-                        <div class="wheel"></div>
-                    </div>
-                    <div class="icon-arrows">
-                        <span></span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div class="scroll-button">
+        <a href="#about-section" class="scroll">
+          <div class="icon-scroll">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div class="icon-arrows">
+              <span></span>
+            </div>
+          </div>
+        </a>
+      </div>
     </header>
     <!-- Header ends -->
 
-
-
-
-
     <!-- About Me Section -->
     <section class="about-section" id="about-section">
-        <div class="aboutHeroPic" id="about-modal">
-            <div class="about-txt">
-                <h2>About me</h2>
-                <!-- <p>I'm a professional web developer with years of experience. I'm focused and passionate about building
+      <div class="aboutHeroPic" id="about-modal">
+        <div class="about-txt">
+          <h2>About me</h2>
+          <!-- <p>I'm a professional web developer with years of experience. I'm focused and passionate about building
                     user interface with the aim of giving users the best experience they can have while surfing the
                     internet.
                     I focus on using html,css and javascript to build interactive and responsive user interfaces across
@@ -102,205 +120,281 @@
                     I also have experience in PHP for server-side scripting while i am currently learning React.js and
                     Bootstrap Css.
                 </p> -->
-                <p>
-                    I'm a creative Computer science graduate with 1+ years of experience in software development. I
-                    demonstrate skills in developing web applications using Javascript, React JS, SCSS, HTML and CSS;
-                    and possess some practical knowledge of backend (PHP and MySql) development and database concepts
-                    with interface designing and implementation. I'm a team player with the ability to complete projects
-                    on time. I'm eager and looking to join a growth oriented team as an <b>
-                        entry level software developer
-                    </b>
-                    to learn and leverage strong programming skills to maintain an efficient code base for reusability
-                    and build reliable software products for businesses.
-                </p>
+          <p>
+            I'm a creative Computer science graduate with 1+ years of experience
+            in software development. I demonstrate skills in developing web
+            applications using Javascript, React JS, SCSS, HTML and CSS; and
+            possess some practical knowledge of backend (PHP and MySql)
+            development and database concepts with interface designing and
+            implementation. I'm a team player with the ability to complete
+            projects on time. I'm eager and looking to join a growth oriented
+            team as an <b> entry level software developer </b>
+            to learn and leverage strong programming skills to maintain an
+            efficient code base for reusability and build reliable software
+            products for businesses.
+          </p>
 
-                <a href="https://docs.google.com/document/d/1cuyJr8DEcLbNy2xo2TzYxe9g53VwR3Xx/edit?usp=drivesdk&ouid=104952003013059085859&rtpof=true&sd=true"
-                    class="btn btn1">View my Resume</a>
-                <!-- <a href="#" id="close" onclick="aboutClose()" class="btn btn1">&times</a> -->
-            </div>
-            <!-- <div class="about-image">
-                <img src="Assets/sammydepoj.png" alt='my-picture' />
-            </div> -->
+          <a
+            href="https://docs.google.com/document/d/1cuyJr8DEcLbNy2xo2TzYxe9g53VwR3Xx/edit?usp=drivesdk&ouid=104952003013059085859&rtpof=true&sd=true"
+            class="btn btn1"
+            >View my Resume</a
+          >
+          <!-- <a href="#" id="close" onclick="aboutClose()" class="btn btn1">&times</a> -->
         </div>
+        <!-- <div class="about-image">
+                <img src="Assets/sammydepoj.png" alt="" />
+            </div> -->
+      </div>
     </section>
-
 
     <!-- Projects Section Begins-->
 
     <section class="proj-section" id="project-section">
+      <!-- <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a> -->
 
-        <!-- <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a> -->
+      <div class="projects" id="projects">
+        <h2>Projects</h2>
+      </div>
+      <p class="notice">
+        Kindly be aware that some of these projects are in their various level
+        of development, therefore, you may not be able to use all the features
+        of some of them.
+      </p>
+      <div class="project-card fade-right">
+        <div class="proj-details">
+          <h3>Minimum Living Cost</h3>
+          <p>
+            Minimum Living Cost(M L C) is an online platform that allows
+            landlords to upload their available homes in a specified location
+            and connect them to users that are willing to rent the uploaded
+            apartments.
+          </p>
 
-        <div class="projects" id="projects">
-            <h2>Projects</h2>
+          <i class="fa-solid fa-link fa-1x">
+            <a target="_blank" href="https://mlc-smoky.vercel.app/"
+              >View Project</a
+            >
+          </i>
+
+          <i class="fa-brands fa-github fa-1x">
+            <a target="_blank" href="https://github.com/Sammydepoj/mlc"
+              >View Code</a
+            >
+          </i>
         </div>
-        <p class="notice">Kindly be
-            aware that
-            some
-            of these projects are in their various level of development, therefore, you may not be able to use all the
-            features of some of them. </p>
-        <div class="project-card fade-right">
-            <div class="proj-details">
-                <h3>WeTeach</h3>
-                <p>WeTeach is an online learning Platform which allows tutors to provide and online education for their
-                    students.</p>
-
-                <i class="fa-solid fa-link fa-1x">
-                    <a target="_blank" href="https://weteachpage.netlify.app/">View Project</a>
-                </i>
-
-
-                <i class="fa-brands fa-github fa-1x">
-                    <a target="_blank" href="https://github.com/Sammydepoj/weteach">View Code</a>
-                </i>
-            </div>
-            <div class="proj-image">
-                <img src="Assets/weteach.jpeg" alt="project image" />
-            </div>
+        <div class="proj-image">
+          <img src="Assets/mlc.PNG" alt="project image" />
         </div>
+      </div>
+      <div class="project-card fade-left">
+        <div class="proj-details">
+          <h3>WeTeach</h3>
+          <p>
+            WeTeach is an online learning Platform which allows tutors to
+            provide and online education for their students.
+          </p>
 
-        <div class="project-card fade-left">
-            <div class="proj-details">
-                <h3>Getfunds.Ng</h3>
-                <p>Grtfunds.ng is an online crowdfunding application which allows users to crowdfund for their needs.
-                </p>
+          <i class="fa-solid fa-link fa-1x">
+            <a target="_blank" href="https://weteachpage.netlify.app/"
+              >View Project</a
+            >
+          </i>
 
-                <i class="fa-solid fa-link">
-                    <a target="_blank" href="https://getfundsng.github.io/Our-Website/">View Project</a>
-                </i>
-                <i class="fa-brands fa-github fa-1x">
-                    <a target="_blank" href="https://github.com/Getfundsng/Our-Website">View Code</a>
-                </i>
-            </div>
-            <div class="proj-image">
-                <img src="Assets/getfunds.jpeg" alt="project image" />
-            </div>
+          <i class="fa-brands fa-github fa-1x">
+            <a target="_blank" href="https://github.com/Sammydepoj/weteach"
+              >View Code</a
+            >
+          </i>
         </div>
-
-        <div class="project-card fade-right">
-            <div class="proj-details">
-                <h3>Weather Forecast</h3>
-                <p> A mini weather forecast application that uses Open Weather API.
-                </p>
-                <i class="fa-solid fa-link">
-                    <a target="_blank" href="https://sammydepoj.github.io/weather-app/">View Project</a>
-                </i>
-                <i class="fa-brands fa-github fa-1x">
-                    <a target="_blank" href="https://github.com/Sammydepoj/weather-app">View Code</a>
-                </i>
-            </div>
-            <div class="proj-image">
-                <img src="Assets/weather-app.jpeg" alt="project image" />
-            </div>
+        <div class="proj-image">
+          <img src="Assets/weteach.jpeg" alt="project image" />
         </div>
+      </div>
 
-        <div class="project-card fade-left">
-            <div class="proj-details">
-                <h3>My Dico</h3>
-                <p>A mini dictionary that's uses Free dictionary API.
-                </p>
-                <i class="fa-solid fa-link">
-                    <a target="_blank" href="https://sammydepoj.github.io/api-dictionary/">View Project</a>
-                </i>
-                <i class="fa-brands fa-github fa-1x">
-                    <a target="_blank" href="https://github.com/Sammydepoj/api-dictionary">View Code</a>
-                </i>
-            </div>
-            <div class="proj-image">
-                <img src="Assets/Mydico.jpeg" alt="project image" />
-            </div>
-        </div>
+      <div class="project-card fade-right">
+        <div class="proj-details">
+          <h3>Getfunds.Ng</h3>
+          <p>
+            Grtfunds.ng is an online crowdfunding application which allows users
+            to crowdfund for their needs.
+          </p>
 
-        <div class="project-card fade-right">
-            <div class="proj-details">
-                <h3>PricingHub</h3>
-                <p> A platform for comparing the prices of gadgets across three E-commerce platforms namely Kara ng,
-                    Konga, and Jumia.
-                    The website is expected to increase the sales on these platforms, serve as a key source of
-                    information by
-                    documenting price trends and generate leads and inquiries for these platforms.</p>
-                <i class="fa-solid fa-link">
-                    <a target="_blank" href="https://team25ph.herokuapp.com/">View Project</a>
-                </i>
-                <i class="fa-brands fa-github fa-1x">
-                    <a target="_blank" href="https://github.com/zuri-training/Project-price-compare-team-25">View
-                        Code</a>
-                </i>
-            </div>
-            <div class="proj-image">
-                <img src="Assets/pricinghub.jpeg" alt="project image" />
-            </div>
+          <i class="fa-solid fa-link">
+            <a target="_blank" href="https://getfundsng.github.io/Our-Website/"
+              >View Project</a
+            >
+          </i>
+          <i class="fa-brands fa-github fa-1x">
+            <a target="_blank" href="https://github.com/Getfundsng/Our-Website"
+              >View Code</a
+            >
+          </i>
         </div>
-        <!-- <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a> -->
+        <div class="proj-image">
+          <img src="Assets/getfunds.jpeg" alt="project image" />
+        </div>
+      </div>
+
+      <div class="project-card fade-left">
+        <div class="proj-details">
+          <h3>Weather Forecast</h3>
+          <p>A mini weather forecast application that uses Open Weather API.</p>
+          <i class="fa-solid fa-link">
+            <a target="_blank" href="https://sammydepoj.github.io/weather-app/"
+              >View Project</a
+            >
+          </i>
+          <i class="fa-brands fa-github fa-1x">
+            <a target="_blank" href="https://github.com/Sammydepoj/weather-app"
+              >View Code</a
+            >
+          </i>
+        </div>
+        <div class="proj-image">
+          <img src="Assets/weather-app.jpeg" alt="project image" />
+        </div>
+      </div>
+
+      <div class="project-card fade-right">
+        <div class="proj-details">
+          <h3>My Dico</h3>
+          <p>A mini dictionary that's uses Free dictionary API.</p>
+          <i class="fa-solid fa-link">
+            <a
+              target="_blank"
+              href="https://sammydepoj.github.io/api-dictionary/"
+              >View Project</a
+            >
+          </i>
+          <i class="fa-brands fa-github fa-1x">
+            <a
+              target="_blank"
+              href="https://github.com/Sammydepoj/api-dictionary"
+              >View Code</a
+            >
+          </i>
+        </div>
+        <div class="proj-image">
+          <img src="Assets/Mydico.jpeg" alt="project image" />
+        </div>
+      </div>
+
+      <div class="project-card fade-left">
+        <div class="proj-details">
+          <h3>PricingHub</h3>
+          <p>
+            A platform for comparing the prices of gadgets across three
+            E-commerce platforms namely Kara ng, Konga, and Jumia. The website
+            is expected to increase the sales on these platforms, serve as a key
+            source of information by documenting price trends and generate leads
+            and inquiries for these platforms.
+          </p>
+          <i class="fa-solid fa-link">
+            <a target="_blank" href="https://team25ph.herokuapp.com/"
+              >View Project</a
+            >
+          </i>
+          <i class="fa-brands fa-github fa-1x">
+            <a
+              target="_blank"
+              href="https://github.com/zuri-training/Project-price-compare-team-25"
+              >View Code</a
+            >
+          </i>
+        </div>
+        <div class="proj-image">
+          <img src="Assets/pricinghub.jpeg" alt="project image" />
+        </div>
+      </div>
+      <!-- <a href="#" id="close" onclick="projectSectionClose()" class="btn btn1"> &times </a> -->
     </section>
 
     <section class="getInTouch" id="getInTouch">
+      <!-- <a href="#" id="close" onclick="contactSectionClose()" class="btn btn1"> &times </a> -->
 
-        <!-- <a href="#" id="close" onclick="contactSectionClose()" class="btn btn1"> &times </a> -->
+      <div class="message" id="contacts">
+        <h2>Get in touch with me</h2>
+      </div>
 
-        <div class="message" id="contacts">
-            <h2>Get in touch with me</h2>
-        </div>
+      <div class="message-form">
+        <form
+          action="mailto:samueladepoju86@yahoo.com"
+          method="get"
+          enctype="text/plain"
+        >
+          <div>
+            <label>Name</label>
+            <br />
+            <input type="text" name="name" id="" arial-label="" />
+          </div>
+          <div>
+            <label>E-mail</label>
+            <br />
+            <input type="email" name="email" id="" arial-label="" />
+          </div>
+          <div>
+            <label>Message</label>
+            <br />
+            <textarea cols="20" rows="15" name="message"></textarea>
+          </div>
 
-        <div class="message-form">
-            <form action="mailto:samueladepoju86@yahoo.com" method="get" enctype="text/plain">
-                <div>
-                    <label>Name</label>
-                    <br>
-                    <input type="text" name="name" id="">
-                </div>
-                <div>
-                    <label>E-mail</label>
-                    <br>
-                    <input type="email" name="email" id="">
-                </div>
-                <div>
-                    <label>Message</label>
-                    <br>
-                    <textarea cols="20" rows="15" name="message"></textarea>
-                </div>
-
-                <button type="submit" name="send" class="message-send btn">Send</button>
-
-            </form>
-        </div>
+          <button type="submit" name="send" class="message-send btn">
+            Send
+          </button>
+        </form>
+      </div>
     </section>
 
     <footer>
-        <div class="social-brand">
-            <p>Connect with me on my socials </p>
-            <div class="socials">
+      <div class="social-brand">
+        <p>Connect with me on my socials</p>
+        <div class="socials">
+          <a
+            href="https://www.twitter.com/sammydepoj "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-twitter fa-2x social-icons"></i>
+          </a>
 
-                <a href="https://www.twitter.com/sammydepoj " target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-twitter fa-2x social-icons"></i>
-                </a>
+          <a
+            href="https://www.instagram.com/sammydepoj "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-square-instagram fa-2x social-icons"></i>
+          </a>
+          <a
+            href="https://www.github.com/sammydepoj "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github fa-2x social-icons"></i>
+          </a>
 
-                <a href="https://www.instagram.com/sammydepoj " target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-square-instagram fa-2x social-icons"></i>
-                </a>
-                <a href="https://www.github.com/sammydepoj " target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github fa-2x social-icons"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/adepoju-adeyemi-samuel-42bb4518a/" target="_blank"
-                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2x social-icons"></i></a>
-                <a href="mailto:samueladepoju86@yahoo.com"><i
-                        class="fa-sharp fa-solid fa-envelope fa-2x social-icons"></i>
-                </a>
-            </div>
-            <div class="brand">
-                <h2 class="h2-brandname" id="copyright"></h2>
-            </div>
+          <a
+            href="https://www.linkedin.com/in/adepoju-adeyemi-samuel-42bb4518a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin fa-2x social-icons"></i
+          ></a>
+          <a href="mailto:samueladepoju86@yahoo.com"
+            ><i class="fa-sharp fa-solid fa-envelope fa-2x social-icons"></i>
+          </a>
         </div>
+        <div class="brand">
+          <h2 class="h2-brandname" id="copyright"></h2>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"
-        integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"
+      integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./Scripts/index.js"></script>
-
-</body>
-
+  </body>
 </html>
