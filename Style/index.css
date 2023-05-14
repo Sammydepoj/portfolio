@@ -315,6 +315,7 @@ li a:hover {
 .btn1 {
   background-color: var(--secondary-color);
   border: var(--border-color);
+  margin: 0rem 1rem 0rem 0rem;
 }
 .btn:hover {
   background-color: var(--secondary-color);
