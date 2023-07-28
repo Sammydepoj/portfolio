@@ -73,7 +73,7 @@ html {
   --text-color: #25282b;
   --title-color: #333333;
   --border-color: black;
-  --background-color: #e5e5e5; 
+  --background-color: #e5e5e5;
 }
 /* 
 Default dark mode colors
@@ -290,12 +290,12 @@ li a:hover {
 }
 
 .hero-image img {
-  width: 50%;
-  margin-top: 3.5rem;
+  /* width: 50%; */
+  margin-top: -4rem;
 }
-.hero-image img:hover {
+/* .hero-image img:hover {
   transform: scale(1.5);
-}
+} */
 .links {
   margin: 2rem auto;
 }
