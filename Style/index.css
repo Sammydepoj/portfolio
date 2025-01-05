@@ -658,9 +658,14 @@ li a:hover {
   /* border-bottom-right-radius: 1rem; */
   border: 1px solid var(--border-color);
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .proj-image img {
   width: 100%;
+  transition: 1s all ease;
+  border-radius: 1rem;
 }
 .proj-image img:hover {
   transform: scale(1.1);
